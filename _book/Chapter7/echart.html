@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>第2节 数据可视化 · GitBook</title>
+        <title>第1节 Echart · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Chapter8/" />
+    <link rel="next" href="Visual.html" />
     
     
-    <link rel="prev" href="echart.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -516,7 +516,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1" data-path="echart.html">
+        <li class="chapter active" data-level="1.9.1" data-path="echart.html">
             
                 <a href="echart.html">
             
@@ -529,7 +529,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.9.2" data-path="Visual.html">
+        <li class="chapter " data-level="1.9.2" data-path="Visual.html">
             
                 <a href="Visual.html">
             
@@ -945,7 +945,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >第2节 数据可视化</a>
+        <a href=".." >第1节 Echart</a>
     </h1>
 </div>
 
@@ -960,8 +960,120 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x7B2C;1&#x8282;-&#x6570;&#x636E;&#x53EF;&#x89C6;&#x5316;">&#x7B2C;1&#x8282; &#x6570;&#x636E;&#x53EF;&#x89C6;&#x5316;</h1>
-<h1 id="echart">Echart</h1>
+                                <h1 id="&#x7B2C;1&#x8282;-echart">&#x7B2C;1&#x8282; Echart</h1>
+<p>3.1.4 echart</p>
+<p>&#x5728;&#x5E73;&#x65F6;&#x5F00;&#x53D1;&#x9879;&#x76EE;&#x65F6;&#xFF0C;&#x514D;&#x4E0D;&#x4E86;&#x9700;&#x8981;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x56FE;&#x8868;&#x663E;&#x793A;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;&#x8D8B;&#x52BF;&#x56FE;&#x3001;&#x997C;&#x72B6;&#x56FE;&#x3001;&#x67F1;&#x5F62;&#x56FE;&#x7B49;&#x3002;&#x81EA;&#x5DF1;&#x8EAB;&#x4E3A;&#x4E00;&#x4E2A;PHPer&#xFF0C;&#x9664;&#x4E86;PHP&#x672C;&#x8EAB;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4E0D;&#x5F97;&#x4E0D;&#x9700;&#x8981;&#x501F;&#x52A9;js&#x6765;&#x5B9E;&#x73B0;&#x663E;&#x793A;&#x3002;&#x5728;&#x4E86;&#x89E3;&#x4F17;&#x591A;&#x8D8B;&#x52BF;&#x56FE;&#x63D2;&#x4EF6;&#xFF0C;&#x56FD;&#x5185;&#x5916;&#x5F00;&#x6E90;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x611F;&#x89C9;&#x8FD8;&#x662F;&#x6765;&#x81EA;&#x767E;&#x5EA6;&#x56E2;&#x961F;&#x7814;&#x53D1;&#x7684;Echarts.js&#x6548;&#x679C;&#x66F4;&#x597D;&#x3002;&#x672C;&#x8EAB;&#x662F;&#x4E2D;&#x6587;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x4F7F;&#x7528;&#x8FC7;&#x7A0B;&#x548C;&#x663E;&#x793A;&#x6548;&#x679C;&#x66F4;&#x52A0;&#x9002;&#x5408;&#x4F7F;&#x7528;&#x3002;</p>
+<h4 id="&#x4EC0;&#x4E48;&#x662F;echartsjs">&#x4EC0;&#x4E48;&#x662F;Echarts.js?</h4>
+<p>Echarts.js&#x662F;&#x6765;&#x81EA;&#x767E;&#x5EA6;&#x56E2;&#x961F;&#x7814;&#x53D1;&#x7684;&#x56FE;&#x8868;js&#x63D2;&#x4EF6;&#xFF0C;&#x5229;&#x7528;HTML+js&#x5B9E;&#x73B0;&#x6298;&#x7EBF;&#x56FE;&#x3001;&#x997C;&#x72B6;&#x56FE;&#x3001;&#x70ED;&#x70B9;&#x56FE;&#x3001;3d&#x56FE;&#x5F62;&#x7B49;&#x7B49;&#xFF0C;&#x53EF;&#x5728;PC&#x548C;&#x79FB;&#x52A8;&#x7AEF;&#x663E;&#x793A;&#xFF0C;&#x52A0;&#x8F7D;&#x901F;&#x5EA6;&#x5FEB;&#xFF0C;&#x529F;&#x80FD;&#x4E30;&#x5BCC;&#x3002;</p>
+<h1 id="echartjs&#x7684;&#x8D8B;&#x52BF;&#x56FE;&#x5165;&#x95E8;&#x4E0E;&#x5B9E;&#x4F8B;">Echart.js&#x7684;&#x8D8B;&#x52BF;&#x56FE;&#x5165;&#x95E8;&#x4E0E;&#x5B9E;&#x4F8B;</h1>
+<p>&#x5728;&#x5E73;&#x65F6;&#x5F00;&#x53D1;&#x9879;&#x76EE;&#x65F6;&#xFF0C;&#x514D;&#x4E0D;&#x4E86;&#x9700;&#x8981;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x56FE;&#x8868;&#x663E;&#x793A;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;&#x8D8B;&#x52BF;&#x56FE;&#x3001;&#x997C;&#x72B6;&#x56FE;&#x3001;&#x67F1;&#x5F62;&#x56FE;&#x7B49;&#x3002;&#x81EA;&#x5DF1;&#x8EAB;&#x4E3A;&#x4E00;&#x4E2A;PHPer&#xFF0C;&#x9664;&#x4E86;PHP&#x672C;&#x8EAB;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4E0D;&#x5F97;&#x4E0D;&#x9700;&#x8981;&#x501F;&#x52A9;js&#x6765;&#x5B9E;&#x73B0;&#x663E;&#x793A;&#x3002;&#x5728;&#x4E86;&#x89E3;&#x4F17;&#x591A;&#x8D8B;&#x52BF;&#x56FE;&#x63D2;&#x4EF6;&#xFF0C;&#x56FD;&#x5185;&#x5916;&#x5F00;&#x6E90;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x611F;&#x89C9;&#x8FD8;&#x662F;&#x6765;&#x81EA;&#x767E;&#x5EA6;&#x56E2;&#x961F;&#x7814;&#x53D1;&#x7684;Echarts.js&#x6548;&#x679C;&#x66F4;&#x597D;&#x3002;&#x672C;&#x8EAB;&#x662F;&#x4E2D;&#x6587;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x4F7F;&#x7528;&#x8FC7;&#x7A0B;&#x548C;&#x663E;&#x793A;&#x6548;&#x679C;&#x66F4;&#x52A0;&#x9002;&#x5408;&#x4F7F;&#x7528;&#x3002;</p>
+<h4 id="&#x4EC0;&#x4E48;&#x662F;echartsjs">&#x4EC0;&#x4E48;&#x662F;Echarts.js?</h4>
+<p>Echarts.js&#x662F;&#x6765;&#x81EA;&#x767E;&#x5EA6;&#x56E2;&#x961F;&#x7814;&#x53D1;&#x7684;&#x56FE;&#x8868;js&#x63D2;&#x4EF6;&#xFF0C;&#x5229;&#x7528;HTML+js&#x5B9E;&#x73B0;&#x6298;&#x7EBF;&#x56FE;&#x3001;&#x997C;&#x72B6;&#x56FE;&#x3001;&#x70ED;&#x70B9;&#x56FE;&#x3001;3d&#x56FE;&#x5F62;&#x7B49;&#x7B49;&#xFF0C;&#x53EF;&#x5728;PC&#x548C;&#x79FB;&#x52A8;&#x7AEF;&#x663E;&#x793A;&#xFF0C;&#x52A0;&#x8F7D;&#x901F;&#x5EA6;&#x5FEB;&#xFF0C;&#x529F;&#x80FD;&#x4E30;&#x5BCC;&#x3002;</p>
+<p><img src="https:////upload-images.jianshu.io/upload_images/10987359-dcef0f72747972d8.png?imageMogr2/auto-orient/strip|imageView2/2/w/1029/format/webp" alt="img"></p>
+<p>image.png</p>
+<p>&#x6211;&#x5728;&#x591A;&#x4E86;&#x89E3;&#x8FD9;&#x4E2A;&#x8F6F;&#x4EF6;&#x540E;&#xFF0C;&#x6DF1;&#x6DF1;&#x7684;&#x88AB;&#x5176;&#x529F;&#x80FD;&#x6240;&#x6298;&#x670D;&#x3002;&#x5728;&#x5B98;&#x65B9;&#x5B9E;&#x4F8B;&#x4E2D;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x5341;&#x591A;&#x79CD;&#x663E;&#x793A;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x611F;&#x4EBA;&#x611F;&#x89C9;&#x6700;&#x5389;&#x5BB3;&#x7684;&#x5C5E;&#x4E8E;&#x663E;&#x793A;&#x5730;&#x7403;&#x8FD8;&#x6709;&#x57CE;&#x5E02;&#x70ED;&#x70B9;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<p><img src="https:////upload-images.jianshu.io/upload_images/10987359-f044df914542489b.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp" alt="img"></p>
+<p>&#x663E;&#x793A;&#x5730;&#x7403;&#x6A21;&#x578B;</p>
+<p>&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x7684;&#x5B9E;&#x4F8B;&#x5730;&#x5740;&#xFF1A;<a href="http://echarts.baidu.com/examples/#chart-type-line" target="_blank">http://echarts.baidu.com/examples/#chart-type-line</a></p>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x5728;&#x5E73;&#x65F6;&#x5F00;&#x53D1;&#x4E2D;&#x5F88;&#x96BE;&#x9700;&#x8981;&#x7528;&#x5230;&#xFF0C;&#x7528;&#x5230;&#x6700;&#x591A;&#x7684;&#x8FD8;&#x662F;&#x6298;&#x7EBF;&#x56FE;&#x3001;&#x997C;&#x72B6;&#x56FE;&#x4E4B;&#x7C7B;&#x7684;&#x57FA;&#x7840;&#x529F;&#x80FD;&#x3002;</p>
+<h4 id="&#x6298;&#x7EBF;&#x56FE;&#x529F;&#x80FD;&#x5B9E;&#x73B0;&#x5B9E;&#x4F8B;">&#x6298;&#x7EBF;&#x56FE;&#x529F;&#x80FD;&#x5B9E;&#x73B0;&#x5B9E;&#x4F8B;</h4>
+<p>&#x5148;&#x770B;&#x4E00;&#x4E0B;&#x5C55;&#x793A;&#x6548;&#x679C;&#xFF0C;&#x6A21;&#x4EFF;&#x67D0;&#x5E7F;&#x544A;&#x5E73;&#x53F0;&#x5728;&#x67D0;&#x5929;&#x7684;24&#x5C0F;&#x65F6;&#x7684;&#x6D41;&#x91CF;&#x8D70;&#x52BF;&#x3002;</p>
+<p><img src="https:////upload-images.jianshu.io/upload_images/10987359-69465f505d330256.png?imageMogr2/auto-orient/strip|imageView2/2/w/1104/format/webp" alt="img"></p>
+<p>image.png</p>
+<h3 id="&#x5B9E;&#x73B0;&#x6B65;&#x9AA4;&#xFF1A;">&#x5B9E;&#x73B0;&#x6B65;&#x9AA4;&#xFF1A;</h3>
+<p>1&#x3001;&#x5728;&#x9875;&#x9762;&#x4E2D;&#x83B7;&#x53D6;Echarts
+ &#x5728;&#x5B98;&#x7F51;&#x4E2D;&#x6839;&#x636E;&#x9700;&#x8981;&#x7684;&#x7248;&#x672C;<a href="http://echarts.baidu.com/download.html" target="_blank">http://echarts.baidu.com/download.html</a></p>
+<p><img src="https:////upload-images.jianshu.io/upload_images/10987359-4f61854be371dadc.png?imageMogr2/auto-orient/strip|imageView2/2/w/871/format/webp" alt="img"></p>
+<p>image.png</p>
+<p> &#x4F8B;&#x5982;&#x672C;&#x4F8B;&#x4E2D;&#x5B9E;&#x73B0;&#x7684;&#x6298;&#x7EBF;&#x56FE;&#xFF0C;&#x83B7;&#x53D6;&#x5E38;&#x7528;&#x7248;&#x6216;&#x8005;&#x7CBE;&#x7B80;&#x7248;&#x5C31;&#x591F;&#x4E86;&#x3002;</p>
+<p>2&#x3001;&#x5F15;&#x5165;Echarts</p>
+<pre><code class="lang-xml"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x5F15;&#x5165; ECharts &#x6587;&#x4EF6; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;echarts.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>3&#x3001;&#x4E3A;Echarts&#x653E;&#x7F6E;&#x4E00;&#x4E2A;&#x5177;&#x5907;&#x5BBD;&#x9AD8;&#x7684;DOM&#x5BB9;&#x5668;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;show_charts&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width:100%; height:600px; margin:80px 0 80px 0;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>4&#x3001;Echarts&#x52A0;&#x8F7D;&#x6570;&#x636E;</p>
+<pre><code class="lang-kotlin"><span class="hljs-type">&lt;script type=&quot;text/javascript&quot;&gt;</span>
+<span class="hljs-comment">/*&#x6B64;&#x6BB5;js&#x6765;&#x81EA;&#x767E;&#x5EA6;Echart.js&#x63D2;&#x4EF6;*/</span>
+<span class="hljs-variable"><span class="hljs-keyword">var</span> dom</span> = document.getElementById(<span class="hljs-string">&quot;show_charts&quot;</span>);
+<span class="hljs-variable"><span class="hljs-keyword">var</span> myChart</span> = echarts.init(dom);
+<span class="hljs-variable"><span class="hljs-keyword">var</span> app</span> = {};
+option = <span class="hljs-literal">null</span>;
+option = {
+    title : {
+        text: &apos;&#x8D8B;&#x52BF;&#x56FE;&apos;,
+        subtext: &apos;\r\n&#x65F6;&#x95F4;&#xFF1A;<span class="hljs-number">2018</span><span class="hljs-number">-08</span><span class="hljs-number">-01</span>\r\n\r\n&#x5E7F;&#x544A;&#x7C7B;&#x578B;&#xFF1A;&#x5168;&#x90E8;&apos;
+    },
+    tooltip : {
+        trigger: &apos;axis&apos;
+    },
+    legend: {
+        data:[&apos;&#x8BF7;&#x6C42;&apos;,&apos;&#x8FD4;&#x56DE;&apos;,&apos;&#x5C55;&#x793A;&apos;,&apos;&#x70B9;&#x51FB;&apos;,&apos;&#x6210;&#x672C;&#x652F;&#x51FA;&apos;]
+    },
+    toolbox: {
+        show : <span class="hljs-literal">true</span>,
+        feature : {
+            mark : {show: <span class="hljs-literal">true</span>},
+<span class="hljs-comment">//            dataView : {show: true, readOnly: false},     //&#x6570;&#x636E;&#x89C6;&#x56FE;&#x6309;&#x94AE;</span>
+            magicType : {show: <span class="hljs-literal">true</span>, type: [&apos;line&apos;, &apos;bar&apos;]},
+<span class="hljs-comment">//            restore : {show: true},       //&#x56FE;&#x8868;&#x53F3;&#x4E0A;&#x89D2;&#x5237;&#x65B0;&#x6309;&#x94AE;</span>
+            saveAsImage : {show: <span class="hljs-literal">true</span>}
+        }
+    },
+    calculable : <span class="hljs-literal">true</span>,
+    xAxis : [
+        {
+            type : &apos;category&apos;,
+            boundaryGap : <span class="hljs-literal">false</span>,
+            data: [<span class="hljs-string">&quot;00:00~01:00&quot;</span>,<span class="hljs-string">&quot;01:00~02:00&quot;</span>,<span class="hljs-string">&quot;02:00~03:00&quot;</span>,<span class="hljs-string">&quot;03:00~04:00&quot;</span>,<span class="hljs-string">&quot;04:00~05:00&quot;</span>,<span class="hljs-string">&quot;05:00~06:00&quot;</span>,<span class="hljs-string">&quot;06:00~07:00&quot;</span>,<span class="hljs-string">&quot;07:00~08:00&quot;</span>,<span class="hljs-string">&quot;08:00~09:00&quot;</span>,<span class="hljs-string">&quot;09:00~10:00&quot;</span>,<span class="hljs-string">&quot;10:00~11:00&quot;</span>,<span class="hljs-string">&quot;11:00~12:00&quot;</span>,<span class="hljs-string">&quot;12:00~13:00&quot;</span>,<span class="hljs-string">&quot;13:00~14:00&quot;</span>,<span class="hljs-string">&quot;14:00~15:00&quot;</span>,<span class="hljs-string">&quot;15:00~16:00&quot;</span>,<span class="hljs-string">&quot;16:00~17:00&quot;</span>,<span class="hljs-string">&quot;17:00~18:00&quot;</span>,<span class="hljs-string">&quot;18:00~19:00&quot;</span>,<span class="hljs-string">&quot;19:00~20:00&quot;</span>,<span class="hljs-string">&quot;20:00~21:00&quot;</span>,<span class="hljs-string">&quot;21:00~22:00&quot;</span>,<span class="hljs-string">&quot;22:00~23:00&quot;</span>,<span class="hljs-string">&quot;23:00~00:00&quot;</span>] }
+    ],
+    yAxis : [
+        {
+            type : &apos;value&apos;,
+            axisLabel : {
+                formatter: &apos;{value}&apos;
+            }
+        }
+    ],
+    series : [
+        {
+            name:&apos;&#x8BF7;&#x6C42;&apos;,
+            type:&apos;line&apos;,
+            data:[<span class="hljs-string">&quot;162408&quot;</span>,<span class="hljs-string">&quot;84274&quot;</span>,<span class="hljs-string">&quot;51885&quot;</span>,<span class="hljs-string">&quot;32385&quot;</span>,<span class="hljs-string">&quot;29434&quot;</span>,<span class="hljs-string">&quot;44453&quot;</span>,<span class="hljs-string">&quot;113740&quot;</span>,<span class="hljs-string">&quot;228128&quot;</span>,<span class="hljs-string">&quot;344679&quot;</span>,<span class="hljs-string">&quot;462128&quot;</span>,<span class="hljs-string">&quot;585712&quot;</span>,<span class="hljs-string">&quot;661449&quot;</span>,<span class="hljs-string">&quot;704045&quot;</span>,<span class="hljs-string">&quot;698178&quot;</span>,<span class="hljs-string">&quot;642736&quot;</span>,<span class="hljs-string">&quot;621051&quot;</span>,<span class="hljs-string">&quot;614459&quot;</span>,<span class="hljs-string">&quot;604958&quot;</span>,<span class="hljs-string">&quot;615722&quot;</span>,<span class="hljs-string">&quot;606564&quot;</span>,<span class="hljs-string">&quot;721321&quot;</span>,<span class="hljs-string">&quot;700773&quot;</span>,<span class="hljs-string">&quot;519813&quot;</span>,<span class="hljs-string">&quot;297617&quot;</span>]        },
+        {
+            name:&apos;&#x8FD4;&#x56DE;&apos;,
+            type:&apos;line&apos;,
+            data:[<span class="hljs-string">&quot;152827&quot;</span>,<span class="hljs-string">&quot;67202&quot;</span>,<span class="hljs-string">&quot;37269&quot;</span>,<span class="hljs-string">&quot;20956&quot;</span>,<span class="hljs-string">&quot;18687&quot;</span>,<span class="hljs-string">&quot;34066&quot;</span>,<span class="hljs-string">&quot;103310&quot;</span>,<span class="hljs-string">&quot;214873&quot;</span>,<span class="hljs-string">&quot;327262&quot;</span>,<span class="hljs-string">&quot;426414&quot;</span>,<span class="hljs-string">&quot;524510&quot;</span>,<span class="hljs-string">&quot;572305&quot;</span>,<span class="hljs-string">&quot;600487&quot;</span>,<span class="hljs-string">&quot;596252&quot;</span>,<span class="hljs-string">&quot;544651&quot;</span>,<span class="hljs-string">&quot;520815&quot;</span>,<span class="hljs-string">&quot;509897&quot;</span>,<span class="hljs-string">&quot;500239&quot;</span>,<span class="hljs-string">&quot;501439&quot;</span>,<span class="hljs-string">&quot;491926&quot;</span>,<span class="hljs-string">&quot;577558&quot;</span>,<span class="hljs-string">&quot;552850&quot;</span>,<span class="hljs-string">&quot;401406&quot;</span>,<span class="hljs-string">&quot;219789&quot;</span>]        },
+        {
+            name:&apos;&#x5C55;&#x793A;&apos;,
+            type:&apos;line&apos;,
+            data:[<span class="hljs-string">&quot;115483&quot;</span>,<span class="hljs-string">&quot;47313&quot;</span>,<span class="hljs-string">&quot;26211&quot;</span>,<span class="hljs-string">&quot;14156&quot;</span>,<span class="hljs-string">&quot;12454&quot;</span>,<span class="hljs-string">&quot;24095&quot;</span>,<span class="hljs-string">&quot;74951&quot;</span>,<span class="hljs-string">&quot;157273&quot;</span>,<span class="hljs-string">&quot;237750&quot;</span>,<span class="hljs-string">&quot;305293&quot;</span>,<span class="hljs-string">&quot;373653&quot;</span>,<span class="hljs-string">&quot;403249&quot;</span>,<span class="hljs-string">&quot;423604&quot;</span>,<span class="hljs-string">&quot;409693&quot;</span>,<span class="hljs-string">&quot;367890&quot;</span>,<span class="hljs-string">&quot;349129&quot;</span>,<span class="hljs-string">&quot;343804&quot;</span>,<span class="hljs-string">&quot;333511&quot;</span>,<span class="hljs-string">&quot;333344&quot;</span>,<span class="hljs-string">&quot;327859&quot;</span>,<span class="hljs-string">&quot;391295&quot;</span>,<span class="hljs-string">&quot;371397&quot;</span>,<span class="hljs-string">&quot;265205&quot;</span>,<span class="hljs-string">&quot;143960&quot;</span>]        },
+        {
+            name:&apos;&#x70B9;&#x51FB;&apos;,
+            type:&apos;line&apos;,
+            data:[<span class="hljs-string">&quot;4091&quot;</span>,<span class="hljs-string">&quot;1735&quot;</span>,<span class="hljs-string">&quot;959&quot;</span>,<span class="hljs-string">&quot;632&quot;</span>,<span class="hljs-string">&quot;664&quot;</span>,<span class="hljs-string">&quot;1576&quot;</span>,<span class="hljs-string">&quot;3996&quot;</span>,<span class="hljs-string">&quot;7038&quot;</span>,<span class="hljs-string">&quot;13033&quot;</span>,<span class="hljs-string">&quot;14639&quot;</span>,<span class="hljs-string">&quot;16757&quot;</span>,<span class="hljs-string">&quot;17034&quot;</span>,<span class="hljs-string">&quot;18368&quot;</span>,<span class="hljs-string">&quot;17084&quot;</span>,<span class="hljs-string">&quot;14718&quot;</span>,<span class="hljs-string">&quot;14087&quot;</span>,<span class="hljs-string">&quot;13928&quot;</span>,<span class="hljs-string">&quot;13212&quot;</span>,<span class="hljs-string">&quot;13042&quot;</span>,<span class="hljs-string">&quot;13501&quot;</span>,<span class="hljs-string">&quot;16424&quot;</span>,<span class="hljs-string">&quot;15824&quot;</span>,<span class="hljs-string">&quot;11331&quot;</span>,<span class="hljs-string">&quot;6073&quot;</span>]        },
+        {
+            name:&apos;&#x6210;&#x672C;&#x652F;&#x51FA;&apos;,
+            type:&apos;line&apos;,
+            data:[<span class="hljs-number">622.02</span>,<span class="hljs-number">260.1</span>,<span class="hljs-number">144.37</span>,<span class="hljs-number">82.63</span>,<span class="hljs-number">75.92</span>,<span class="hljs-number">159.33</span>,<span class="hljs-number">491.01</span>,<span class="hljs-number">976.69</span>,<span class="hljs-number">1494.82</span>,<span class="hljs-number">1859.92</span>,<span class="hljs-number">2215.17</span>,<span class="hljs-number">2379.43</span>,<span class="hljs-number">2569.69</span>,<span class="hljs-number">2477.18</span>,<span class="hljs-number">2220.92</span>,<span class="hljs-number">2134.79</span>,<span class="hljs-number">2094.97</span>,<span class="hljs-number">2039.94</span>,<span class="hljs-number">2021</span>,<span class="hljs-number">2000.8</span>,<span class="hljs-number">2325.55</span>,<span class="hljs-number">2222.01</span>,<span class="hljs-number">1590.13</span>,<span class="hljs-number">859.93</span>]        }
+    ]
+};
+
+;
+<span class="hljs-keyword">if</span> (option &amp;&amp; typeof option === <span class="hljs-string">&quot;object&quot;</span>) {
+    myChart.setOption(option, <span class="hljs-literal">true</span>);
+}
+<span class="hljs-type">&lt;/script&gt;</span>
+</code></pre>
+<p>&#x7ECF;&#x8FC7;&#x4EE3;&#x7801;&#x8BBE;&#x7F6E;&#xFF0C;&#x4E00;&#x4E2A;&#x6298;&#x7EBF;&#x56FE;&#x662F;&#x4E0D;&#x662F;&#x5DF2;&#x7ECF;&#x597D;&#x4E86;&#x5462;&#x3002;&#x6CA1;&#x597D;&#x7684;&#x8BDD;&#xFF0C;&#x8BF7;&#x68C0;&#x67E5;Echarts.js&#x6587;&#x4EF6;&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x6B64;&#x6848;&#x4F8B;&#x672C;&#x4EBA;&#x4EB2;&#x6D4B;&#x8FC7;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6298;&#x7EBF;&#x56FE;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x6709;&#x5F88;&#x591A;&#x53C2;&#x6570;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x5728;&#x5E73;&#x65F6;&#x5F00;&#x53D1;&#x4E2D;&#x53BB;&#x53D1;&#x73B0;&#xFF0C;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x591A;&#x8BFB;&#x8BFB;&#x5B98;&#x65B9;&#x7684;&#x6559;&#x7A0B;&#xFF0C;&#x4EE5;&#x53CA;&#x6848;&#x4F8B;&#x3002;<a href="http://echarts.baidu.com/examples/#chart-type-line" target="_blank">&#x5B98;&#x7F51;&#x5B9E;&#x4F8B;&#x94FE;&#x63A5;</a></p>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x5C31;&#x4ECB;&#x7ECD;&#x8FD9;&#x4E9B;&#xFF0C;&#x5E0C;&#x671B;&#x6B64;&#x6587;&#x7AE0;&#x80FD;&#x5BF9;&#x5927;&#x5BB6;&#x63A2;&#x7D22;Echarts&#x6709;&#x6240;&#x5E2E;&#x52A9;&#x3002;</p>
 
                                 
                                 </section>
@@ -989,12 +1101,12 @@
 
             
                 
-                <a href="echart.html" class="navigation navigation-prev " aria-label="Previous page: 第1节 Echart">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 第七章 数据分析">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../Chapter8/" class="navigation navigation-next " aria-label="Next page: 第八章 自然语言处理">
+                <a href="Visual.html" class="navigation navigation-next " aria-label="Next page: 第2节 数据可视化">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1005,7 +1117,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第2节 数据可视化","level":"1.9.2","depth":2,"next":{"title":"第八章 自然语言处理","level":"1.10","depth":1,"path":"Chapter8/README.md","ref":"Chapter8/README.md","articles":[{"title":"第1节：情感分析","level":"1.10.1","depth":2,"path":"Chapter8/Emotion.md","ref":"Chapter8/Emotion.md","articles":[]},{"title":"第2节：聊天机器人","level":"1.10.2","depth":2,"path":"Chapter8/Robot.md","ref":"Chapter8/Robot.md","articles":[]},{"title":"第3节：智能文本生成","level":"1.10.3","depth":2,"path":"Chapter8/TextGen.md","ref":"Chapter8/TextGen.md","articles":[]}]},"previous":{"title":"第1节 Echart","level":"1.9.1","depth":2,"path":"Chapter7/echart.md","ref":"Chapter7/echart.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter7/Visual.md","mtime":"2019-12-04T14:49:22.966Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-05T14:50:49.829Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第1节 Echart","level":"1.9.1","depth":2,"next":{"title":"第2节 数据可视化","level":"1.9.2","depth":2,"path":"Chapter7/Visual.md","ref":"Chapter7/Visual.md","articles":[]},"previous":{"title":"第七章 数据分析","level":"1.9","depth":1,"path":"Chapter7/README.md","ref":"Chapter7/README.md","articles":[{"title":"第1节 Echart","level":"1.9.1","depth":2,"path":"Chapter7/echart.md","ref":"Chapter7/echart.md","articles":[]},{"title":"第2节 数据可视化","level":"1.9.2","depth":2,"path":"Chapter7/Visual.md","ref":"Chapter7/Visual.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter7/echart.md","mtime":"2019-12-05T07:04:10.963Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-05T14:50:49.829Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

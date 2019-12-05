@@ -1,0 +1,1268 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第2节：WebSocket · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Http.html" />
+    
+    
+    <link rel="prev" href="Socket.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../Abstract.html">
+            
+                <a href="../Abstract.html">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter1/">
+            
+                <a href="../Chapter1/">
+            
+                    
+                    第一章 从应用谈起
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Chapter1/Env.html">
+            
+                <a href="../Chapter1/Env.html">
+            
+                    
+                    第1节：开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Chapter1/Simple.html">
+            
+                <a href="../Chapter1/Simple.html">
+            
+                    
+                    第2节：极简应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Chapter1/Fun.html">
+            
+                <a href="../Chapter1/Fun.html">
+            
+                    
+                    第3节：有趣的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chapter2/">
+            
+                <a href="../Chapter2/">
+            
+                    
+                    第二章 语言基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Chapter2/Python.html">
+            
+                <a href="../Chapter2/Python.html">
+            
+                    
+                    第1节：Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Chapter2/JavaScript.html">
+            
+                <a href="../Chapter2/JavaScript.html">
+            
+                    
+                    第2节：JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Chapter2/Html.html">
+            
+                <a href="../Chapter2/Html.html">
+            
+                    
+                    第3节：Html
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Chapter2/CodeStandard.html">
+            
+                <a href="../Chapter2/CodeStandard.html">
+            
+                    
+                    第4节：代码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../Chapter2/Structure.html">
+            
+                <a href="../Chapter2/Structure.html">
+            
+                    
+                    第5节：软件架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第三章 网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Socket.html">
+            
+                <a href="Socket.html">
+            
+                    
+                    第1节：Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="WebSocket.html">
+            
+                <a href="WebSocket.html">
+            
+                    
+                    第2节：WebSocket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Http.html">
+            
+                <a href="Http.html">
+            
+                    
+                    第3节：Http
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Rpc.html">
+            
+                <a href="Rpc.html">
+            
+                    
+                    第4节：Rpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter4/">
+            
+                <a href="../Chapter4/">
+            
+                    
+                    第四章 可视化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Chapter4/json.html">
+            
+                <a href="../Chapter4/json.html">
+            
+                    
+                    第1节：通信数据格式Json
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Chapter4/amis.html">
+            
+                <a href="../Chapter4/amis.html">
+            
+                    
+                    第2节：可配置生成的前端框架Amis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Chapter4/vue.html">
+            
+                <a href="../Chapter4/vue.html">
+            
+                    
+                    第3节：组件前端Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Chapter4/Web.html">
+            
+                <a href="../Chapter4/Web.html">
+            
+                    
+                    第4节：前端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Chapter4/Client.html">
+            
+                <a href="../Chapter4/Client.html">
+            
+                    
+                    第5节：客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Chapter5/">
+            
+                <a href="../Chapter5/">
+            
+                    
+                    第五章 静态爬虫
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Chapter5/Xpath.html">
+            
+                <a href="../Chapter5/Xpath.html">
+            
+                    
+                    第1节 xpath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Chapter5/Bs4.html">
+            
+                <a href="../Chapter5/Bs4.html">
+            
+                    
+                    第2节 bs4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Chapter5/tmp.html">
+            
+                <a href="../Chapter5/tmp.html">
+            
+                    
+                    第3节 实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Chapter6/">
+            
+                <a href="../Chapter6/">
+            
+                    
+                    第六章 动态爬虫
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Chapter6/Selenium.html">
+            
+                <a href="../Chapter6/Selenium.html">
+            
+                    
+                    第1节 Selenium
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Chapter7/">
+            
+                <a href="../Chapter7/">
+            
+                    
+                    第七章 数据分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Chapter7/echart.html">
+            
+                <a href="../Chapter7/echart.html">
+            
+                    
+                    第1节 Echart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../Chapter7/Visual.html">
+            
+                <a href="../Chapter7/Visual.html">
+            
+                    
+                    第2节 数据可视化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Chapter8/">
+            
+                <a href="../Chapter8/">
+            
+                    
+                    第八章 自然语言处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Chapter8/Emotion.html">
+            
+                <a href="../Chapter8/Emotion.html">
+            
+                    
+                    第1节：情感分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Chapter8/Robot.html">
+            
+                <a href="../Chapter8/Robot.html">
+            
+                    
+                    第2节：聊天机器人
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Chapter8/TextGen.html">
+            
+                <a href="../Chapter8/TextGen.html">
+            
+                    
+                    第3节：智能文本生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Chapter9/">
+            
+                <a href="../Chapter9/">
+            
+                    
+                    第九章 系统构建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Chapter9/IM.html">
+            
+                <a href="../Chapter9/IM.html">
+            
+                    
+                    第1节：及时通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Chapter9/SearchEngine.html">
+            
+                <a href="../Chapter9/SearchEngine.html">
+            
+                    
+                    第2节：搜索引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Chapter10/">
+            
+                <a href="../Chapter10/">
+            
+                    
+                    第十章 系统集成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../Chapter1/CrossLanguage.html">
+            
+                <a href="../Chapter1/CrossLanguage.html">
+            
+                    
+                    第1节：跨语言调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../Chapter10/Rpc.html">
+            
+                <a href="../Chapter10/Rpc.html">
+            
+                    
+                    第2节：Rpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../Chapter10/Communication.html">
+            
+                <a href="../Chapter10/Communication.html">
+            
+                    
+                    第3节：通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Chapter11/">
+            
+                <a href="../Chapter11/">
+            
+                    
+                    第十一章 系统优化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../Chapter11/Analyse.html">
+            
+                <a href="../Chapter11/Analyse.html">
+            
+                    
+                    第1节：性能分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../Chapter11/Algorithm.html">
+            
+                <a href="../Chapter11/Algorithm.html">
+            
+                    
+                    第2节：算法优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../Chapter11/Compile.html">
+            
+                <a href="../Chapter11/Compile.html">
+            
+                    
+                    第3节：编译优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../Chapter11/CrossLanguage.html">
+            
+                <a href="../Chapter11/CrossLanguage.html">
+            
+                    
+                    第4节：跨语言调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../Chapter11/Structure.html">
+            
+                <a href="../Chapter11/Structure.html">
+            
+                    
+                    第5节：架构优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="../Chapter11/Montor.html">
+            
+                <a href="../Chapter11/Montor.html">
+            
+                    
+                    第6节：系统监控优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../Chapter12/">
+            
+                <a href="../Chapter12/">
+            
+                    
+                    后记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../Chapter13/">
+            
+                <a href="../Chapter13/">
+            
+                    
+                    参考文献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../Chapter14/">
+            
+                <a href="../Chapter14/">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../Chapter14/gitbook.html">
+            
+                <a href="../Chapter14/gitbook.html">
+            
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../Chapter14/git.html">
+            
+                <a href="../Chapter14/git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../Chapter14/markdown.html">
+            
+                <a href="../Chapter14/markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="../Chapter14/nginx.html">
+            
+                <a href="../Chapter14/nginx.html">
+            
+                    
+                    Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../Chapter14/">
+            
+                <a href="../Chapter14/">
+            
+                    
+                    作者简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第2节：WebSocket</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="html5-websocket">HTML5 WebSocket</h1>
+<p>WebSocket &#x662F; HTML5 &#x5F00;&#x59CB;&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x79CD;&#x5728;&#x5355;&#x4E2A; TCP &#x8FDE;&#x63A5;&#x4E0A;&#x8FDB;&#x884C;&#x5168;&#x53CC;&#x5DE5;&#x901A;&#x8BAF;&#x7684;&#x534F;&#x8BAE;&#x3002;</p>
+<p>WebSocket &#x4F7F;&#x5F97;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x6570;&#x636E;&#x4EA4;&#x6362;&#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x7B80;&#x5355;&#xFF0C;&#x5141;&#x8BB8;&#x670D;&#x52A1;&#x7AEF;&#x4E3B;&#x52A8;&#x5411;&#x5BA2;&#x6237;&#x7AEF;&#x63A8;&#x9001;&#x6570;&#x636E;&#x3002;&#x5728; WebSocket API &#x4E2D;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x548C;&#x670D;&#x52A1;&#x5668;&#x53EA;&#x9700;&#x8981;&#x5B8C;&#x6210;&#x4E00;&#x6B21;&#x63E1;&#x624B;&#xFF0C;&#x4E24;&#x8005;&#x4E4B;&#x95F4;&#x5C31;&#x76F4;&#x63A5;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x6301;&#x4E45;&#x6027;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x5E76;&#x8FDB;&#x884C;&#x53CC;&#x5411;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x3002;</p>
+<p>&#x5728; WebSocket API &#x4E2D;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x548C;&#x670D;&#x52A1;&#x5668;&#x53EA;&#x9700;&#x8981;&#x505A;&#x4E00;&#x4E2A;&#x63E1;&#x624B;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x7136;&#x540E;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x548C;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#x5C31;&#x5F62;&#x6210;&#x4E86;&#x4E00;&#x6761;&#x5FEB;&#x901F;&#x901A;&#x9053;&#x3002;&#x4E24;&#x8005;&#x4E4B;&#x95F4;&#x5C31;&#x76F4;&#x63A5;&#x53EF;&#x4EE5;&#x6570;&#x636E;&#x4E92;&#x76F8;&#x4F20;&#x9001;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x5F88;&#x591A;&#x7F51;&#x7AD9;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x63A8;&#x9001;&#x6280;&#x672F;&#xFF0C;&#x6240;&#x7528;&#x7684;&#x6280;&#x672F;&#x90FD;&#x662F; Ajax &#x8F6E;&#x8BE2;&#x3002;&#x8F6E;&#x8BE2;&#x662F;&#x5728;&#x7279;&#x5B9A;&#x7684;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#xFF08;&#x5982;&#x6BCF;1&#x79D2;&#xFF09;&#xFF0C;&#x7531;&#x6D4F;&#x89C8;&#x5668;&#x5BF9;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x51FA;HTTP&#x8BF7;&#x6C42;&#xFF0C;&#x7136;&#x540E;&#x7531;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x6700;&#x65B0;&#x7684;&#x6570;&#x636E;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x3002;&#x8FD9;&#x79CD;&#x4F20;&#x7EDF;&#x7684;&#x6A21;&#x5F0F;&#x5E26;&#x6765;&#x5F88;&#x660E;&#x663E;&#x7684;&#x7F3A;&#x70B9;&#xFF0C;&#x5373;&#x6D4F;&#x89C8;&#x5668;&#x9700;&#x8981;&#x4E0D;&#x65AD;&#x7684;&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x51FA;&#x8BF7;&#x6C42;&#xFF0C;&#x7136;&#x800C;HTTP&#x8BF7;&#x6C42;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x8F83;&#x957F;&#x7684;&#x5934;&#x90E8;&#xFF0C;&#x5176;&#x4E2D;&#x771F;&#x6B63;&#x6709;&#x6548;&#x7684;&#x6570;&#x636E;&#x53EF;&#x80FD;&#x53EA;&#x662F;&#x5F88;&#x5C0F;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x663E;&#x7136;&#x8FD9;&#x6837;&#x4F1A;&#x6D6A;&#x8D39;&#x5F88;&#x591A;&#x7684;&#x5E26;&#x5BBD;&#x7B49;&#x8D44;&#x6E90;&#x3002;</p>
+<p>HTML5 &#x5B9A;&#x4E49;&#x7684; WebSocket &#x534F;&#x8BAE;&#xFF0C;&#x80FD;&#x66F4;&#x597D;&#x7684;&#x8282;&#x7701;&#x670D;&#x52A1;&#x5668;&#x8D44;&#x6E90;&#x548C;&#x5E26;&#x5BBD;&#xFF0C;&#x5E76;&#x4E14;&#x80FD;&#x591F;&#x66F4;&#x5B9E;&#x65F6;&#x5730;&#x8FDB;&#x884C;&#x901A;&#x8BAF;&#x3002;</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2016/03/ws.png" alt="img"></p>
+<p>&#x6D4F;&#x89C8;&#x5668;&#x901A;&#x8FC7; JavaScript &#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x51FA;&#x5EFA;&#x7ACB; WebSocket &#x8FDE;&#x63A5;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x8FDE;&#x63A5;&#x5EFA;&#x7ACB;&#x4EE5;&#x540E;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; TCP &#x8FDE;&#x63A5;&#x76F4;&#x63A5;&#x4EA4;&#x6362;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x5F53;&#x4F60;&#x83B7;&#x53D6; Web Socket &#x8FDE;&#x63A5;&#x540E;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <strong>send()</strong> &#x65B9;&#x6CD5;&#x6765;&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x901A;&#x8FC7; <strong>onmessage</strong> &#x4E8B;&#x4EF6;&#x6765;&#x63A5;&#x6536;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B; API &#x7528;&#x4E8E;&#x521B;&#x5EFA; WebSocket &#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code>var Socket = new WebSocket(url, [protocol] );
+</code></pre><p>&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570; url, &#x6307;&#x5B9A;&#x8FDE;&#x63A5;&#x7684; URL&#x3002;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570; protocol &#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x6307;&#x5B9A;&#x4E86;&#x53EF;&#x63A5;&#x53D7;&#x7684;&#x5B50;&#x534F;&#x8BAE;&#x3002;</p>
+<hr>
+<h2 id="websocket-&#x5C5E;&#x6027;">WebSocket &#x5C5E;&#x6027;</h2>
+<p>&#x4EE5;&#x4E0B;&#x662F; WebSocket &#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x3002;&#x5047;&#x5B9A;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x521B;&#x5EFA;&#x4E86; Socket &#x5BF9;&#x8C61;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5C5E;&#x6027;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Socket.readyState</td>
+<td style="text-align:left">&#x53EA;&#x8BFB;&#x5C5E;&#x6027; <strong>readyState</strong> &#x8868;&#x793A;&#x8FDE;&#x63A5;&#x72B6;&#x6001;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x4EE5;&#x4E0B;&#x503C;&#xFF1A;0 - &#x8868;&#x793A;&#x8FDE;&#x63A5;&#x5C1A;&#x672A;&#x5EFA;&#x7ACB;&#x3002;1 - &#x8868;&#x793A;&#x8FDE;&#x63A5;&#x5DF2;&#x5EFA;&#x7ACB;&#xFF0C;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x3002;2 - &#x8868;&#x793A;&#x8FDE;&#x63A5;&#x6B63;&#x5728;&#x8FDB;&#x884C;&#x5173;&#x95ED;&#x3002;3 - &#x8868;&#x793A;&#x8FDE;&#x63A5;&#x5DF2;&#x7ECF;&#x5173;&#x95ED;&#x6216;&#x8005;&#x8FDE;&#x63A5;&#x4E0D;&#x80FD;&#x6253;&#x5F00;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">Socket.bufferedAmount</td>
+<td style="text-align:left">&#x53EA;&#x8BFB;&#x5C5E;&#x6027; <strong>bufferedAmount</strong> &#x5DF2;&#x88AB; send() &#x653E;&#x5165;&#x6B63;&#x5728;&#x961F;&#x5217;&#x4E2D;&#x7B49;&#x5F85;&#x4F20;&#x8F93;&#xFF0C;&#x4F46;&#x662F;&#x8FD8;&#x6CA1;&#x6709;&#x53D1;&#x51FA;&#x7684; UTF-8 &#x6587;&#x672C;&#x5B57;&#x8282;&#x6570;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="websocket-&#x4E8B;&#x4EF6;">WebSocket &#x4E8B;&#x4EF6;</h2>
+<p>&#x4EE5;&#x4E0B;&#x662F; WebSocket &#x5BF9;&#x8C61;&#x7684;&#x76F8;&#x5173;&#x4E8B;&#x4EF6;&#x3002;&#x5047;&#x5B9A;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x521B;&#x5EFA;&#x4E86; Socket &#x5BF9;&#x8C61;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x4E8B;&#x4EF6;</th>
+<th style="text-align:left">&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">open</td>
+<td style="text-align:left">Socket.onopen</td>
+<td style="text-align:left">&#x8FDE;&#x63A5;&#x5EFA;&#x7ACB;&#x65F6;&#x89E6;&#x53D1;</td>
+</tr>
+<tr>
+<td style="text-align:left">message</td>
+<td style="text-align:left">Socket.onmessage</td>
+<td style="text-align:left">&#x5BA2;&#x6237;&#x7AEF;&#x63A5;&#x6536;&#x670D;&#x52A1;&#x7AEF;&#x6570;&#x636E;&#x65F6;&#x89E6;&#x53D1;</td>
+</tr>
+<tr>
+<td style="text-align:left">error</td>
+<td style="text-align:left">Socket.onerror</td>
+<td style="text-align:left">&#x901A;&#x4FE1;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x65F6;&#x89E6;&#x53D1;</td>
+</tr>
+<tr>
+<td style="text-align:left">close</td>
+<td style="text-align:left">Socket.onclose</td>
+<td style="text-align:left">&#x8FDE;&#x63A5;&#x5173;&#x95ED;&#x65F6;&#x89E6;&#x53D1;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="websocket-&#x65B9;&#x6CD5;">WebSocket &#x65B9;&#x6CD5;</h2>
+<p>&#x4EE5;&#x4E0B;&#x662F; WebSocket &#x5BF9;&#x8C61;&#x7684;&#x76F8;&#x5173;&#x65B9;&#x6CD5;&#x3002;&#x5047;&#x5B9A;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x521B;&#x5EFA;&#x4E86; Socket &#x5BF9;&#x8C61;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x65B9;&#x6CD5;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Socket.send()</td>
+<td style="text-align:left">&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x53D1;&#x9001;&#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td style="text-align:left">Socket.close()</td>
+<td style="text-align:left">&#x5173;&#x95ED;&#x8FDE;&#x63A5;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="websocket-&#x5B9E;&#x4F8B;">WebSocket &#x5B9E;&#x4F8B;</h2>
+<p>WebSocket &#x534F;&#x8BAE;&#x672C;&#x8D28;&#x4E0A;&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E; TCP &#x7684;&#x534F;&#x8BAE;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A; WebSocket &#x8FDE;&#x63A5;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x6D4F;&#x89C8;&#x5668;&#x9996;&#x5148;&#x8981;&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x8D77;&#x4E00;&#x4E2A; HTTP &#x8BF7;&#x6C42;&#xFF0C;&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x548C;&#x901A;&#x5E38;&#x7684; HTTP &#x8BF7;&#x6C42;&#x4E0D;&#x540C;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E9B;&#x9644;&#x52A0;&#x5934;&#x4FE1;&#x606F;&#xFF0C;&#x5176;&#x4E2D;&#x9644;&#x52A0;&#x5934;&#x4FE1;&#x606F;&quot;Upgrade: WebSocket&quot;&#x8868;&#x660E;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x7533;&#x8BF7;&#x534F;&#x8BAE;&#x5347;&#x7EA7;&#x7684; HTTP &#x8BF7;&#x6C42;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x89E3;&#x6790;&#x8FD9;&#x4E9B;&#x9644;&#x52A0;&#x7684;&#x5934;&#x4FE1;&#x606F;&#x7136;&#x540E;&#x4EA7;&#x751F;&#x5E94;&#x7B54;&#x4FE1;&#x606F;&#x8FD4;&#x56DE;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684; WebSocket &#x8FDE;&#x63A5;&#x5C31;&#x5EFA;&#x7ACB;&#x8D77;&#x6765;&#x4E86;&#xFF0C;&#x53CC;&#x65B9;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x8FDE;&#x63A5;&#x901A;&#x9053;&#x81EA;&#x7531;&#x7684;&#x4F20;&#x9012;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E2A;&#x8FDE;&#x63A5;&#x4F1A;&#x6301;&#x7EED;&#x5B58;&#x5728;&#x76F4;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x6216;&#x8005;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x67D0;&#x4E00;&#x65B9;&#x4E3B;&#x52A8;&#x7684;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x3002;</p>
+<h3 id="&#x5BA2;&#x6237;&#x7AEF;&#x7684;-html-&#x548C;-javascript">&#x5BA2;&#x6237;&#x7AEF;&#x7684; HTML &#x548C; JavaScript</h3>
+<p>&#x76EE;&#x524D;&#x5927;&#x90E8;&#x5206;&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301; WebSocket() &#x63A5;&#x53E3;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x4EE5;&#x4E0B;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x5C1D;&#x8BD5;&#x5B9E;&#x4F8B;&#xFF1A; Chrome, Mozilla, Opera &#x548C; Safari&#x3002;</p>
+<p>runoob_websocket.html &#x6587;&#x4EF6;&#x5185;&#x5BB9;</p>
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+   &lt;head&gt;
+   &lt;meta charset=&quot;utf-8&quot;&gt;
+   &lt;title&gt;&#x83DC;&#x9E1F;&#x6559;&#x7A0B;(runoob.com)&lt;/title&gt;
+
+      &lt;script type=&quot;text/javascript&quot;&gt;
+         function WebSocketTest()
+         {
+            if (&quot;WebSocket&quot; in window)
+            {
+               alert(&quot;&#x60A8;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301; WebSocket!&quot;);
+
+               // &#x6253;&#x5F00;&#x4E00;&#x4E2A; web socket
+               var ws = new WebSocket(&quot;ws://localhost:9998/echo&quot;);
+
+               ws.onopen = function()
+               {
+                  // Web Socket &#x5DF2;&#x8FDE;&#x63A5;&#x4E0A;&#xFF0C;&#x4F7F;&#x7528; send() &#x65B9;&#x6CD5;&#x53D1;&#x9001;&#x6570;&#x636E;
+                  ws.send(&quot;&#x53D1;&#x9001;&#x6570;&#x636E;&quot;);
+                  alert(&quot;&#x6570;&#x636E;&#x53D1;&#x9001;&#x4E2D;...&quot;);
+               };
+
+               ws.onmessage = function (evt) 
+               { 
+                  var received_msg = evt.data;
+                  alert(&quot;&#x6570;&#x636E;&#x5DF2;&#x63A5;&#x6536;...&quot;);
+               };
+
+               ws.onclose = function()
+               { 
+                  // &#x5173;&#x95ED; websocket
+                  alert(&quot;&#x8FDE;&#x63A5;&#x5DF2;&#x5173;&#x95ED;...&quot;); 
+               };
+            }
+
+            else
+            {
+               // &#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x652F;&#x6301; WebSocket
+               alert(&quot;&#x60A8;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x652F;&#x6301; WebSocket!&quot;);
+            }
+         }
+      &lt;/script&gt;
+
+   &lt;/head&gt;
+   &lt;body&gt;
+
+      &lt;div id=&quot;sse&quot;&gt;
+         &lt;a href=&quot;javascript:WebSocketTest()&quot;&gt;&#x8FD0;&#x884C; WebSocket&lt;/a&gt;
+      &lt;/div&gt;
+
+   &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>&#x6211;&#x4EEC;&#x4E00;&#x76F4;&#x4F7F;&#x7528;&#x7684;http&#x534F;&#x8BAE;&#x53EA;&#x80FD;&#x7531;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8D77;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x8FDB;&#x884C;&#x63A8;&#x9001;&#xFF0C;&#x8FD9;&#x5C31;&#x5BFC;&#x81F4;&#x4E86;&#x5982;&#x679C;&#x670D;&#x52A1;&#x7AEF;&#x6709;&#x6301;&#x7EED;&#x7684;&#x53D8;&#x5316;&#x5BA2;&#x6237;&#x7AEF;&#x60F3;&#x8981;&#x83B7;&#x77E5;&#x5C31;&#x6BD4;&#x8F83;&#x9EBB;&#x70E6;&#x3002;WebSocket&#x534F;&#x8BAE;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x5E94;&#x8FD0;&#x800C;&#x751F;&#x3002;</p>
+<p>WebSocket&#x534F;&#x8BAE;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x90FD;&#x53EF;&#x4EE5;&#x4E3B;&#x52A8;&#x7684;&#x63A8;&#x9001;&#x6D88;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x6587;&#x672C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x3002;&#x800C;&#x4E14;&#x6CA1;&#x6709;&#x540C;&#x6E90;&#x7B56;&#x7565;&#x7684;&#x9650;&#x5236;&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x8DE8;&#x57DF;&#x95EE;&#x9898;&#x3002;&#x534F;&#x8BAE;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x5C31;&#x662F;<code>ws</code>&#x3002;&#x50CF;https&#x4E00;&#x6837;&#x5982;&#x679C;&#x52A0;&#x5BC6;&#x7684;&#x8BDD;&#x5C31;&#x662F;<code>wxs</code>&#x3002;</p>
+<h4 id="&#x7B80;&#x5355;&#x5B9E;&#x4F8B;">&#x7B80;&#x5355;&#x5B9E;&#x4F8B;</h4>
+<p>&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-jsx"><span class="hljs-keyword">let</span> ws = <span class="hljs-keyword">new</span> WebSocket(<span class="hljs-string">&quot;ws://localhost:8181&quot;</span>);
+ws.onopen = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;client&#xFF1A;&#x6253;&#x5F00;&#x8FDE;&#x63A5;&quot;</span>);
+  ws.send(<span class="hljs-string">&quot;client&#xFF1A;hello&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&quot;</span>);
+};
+ws.onmessage = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;client&#xFF1A;&#x63A5;&#x6536;&#x5230;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x6D88;&#x606F; &quot;</span> + e.data);
+  setTimeout(() =&gt; {
+    ws.close();
+  }, <span class="hljs-number">5000</span>);
+};
+ws.onclose = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">params</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;client&#xFF1A;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&quot;</span>);
+};
+</code></pre>
+<p>&#x670D;&#x52A1;&#x7AEF;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-jsx"><span class="hljs-keyword">var</span> WebSocket = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;ws&apos;</span>);
+<span class="hljs-keyword">var</span> wss = <span class="hljs-keyword">new</span> WebSocket.Server({ port: <span class="hljs-number">8181</span> });
+
+wss.on(<span class="hljs-string">&apos;connection&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ws</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;server: &#x6536;&#x5230;&#x8FDE;&#x63A5;&apos;</span>);
+  ws.on(<span class="hljs-string">&apos;message&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">message</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;server: &#x6536;&#x5230;&#x6D88;&#x606F;&apos;</span>, message);
+  });
+  ws.send(<span class="hljs-string">&apos;server: hi&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&apos;</span>);
+});
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5229;&#x7528;<code>ws</code>&#x5E93;&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x524D;&#x540E;&#x7AEF;&#x6253;&#x62DB;&#x547C;&#x7684;&#x529F;&#x80FD;&#x3002;&#x5F53;&#x7136;&#x4E5F;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5176;&#x4ED6;&#x7684;&#x5E93;&#x5B9E;&#x73B0;&#x3002;&#x4EE3;&#x7801;&#x5F88;&#x7B80;&#x5355;&#x4E00;&#x770B;&#x5C31;&#x80FD;&#x770B;&#x61C2;&#xFF0C;&#x8FD9;&#x91CC;&#x4E0D;&#x8D58;&#x8FF0;&#x4E86;&#x3002;</p>
+<h4 id="websocket&#x7684;api">WebSocket&#x7684;API</h4>
+<h6 id="1&#x3001;&#x6784;&#x9020;&#x51FD;&#x6570;">1&#x3001;&#x6784;&#x9020;&#x51FD;&#x6570;</h6>
+<p>&#x901A;&#x8FC7;WebSocket&#x6784;&#x9020;&#x51FD;&#x6570;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;WebSocket&#x5B9E;&#x4F8B;&#xFF0C;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5730;&#x5740;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x6B64;&#x65F6;&#x5C31;&#x5DF2;&#x7ECF;&#x5411;&#x670D;&#x52A1;&#x7AEF;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;&#x4E86;&#x3002;</p>
+<h6 id="2&#x3001;readystate">2&#x3001;readyState</h6>
+<p>&#x83B7;&#x53D6;&#x8BE5;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x5F53;&#x524D;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x6709;&#x56DB;&#x79CD;&#x8FD4;&#x56DE;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-jsx"><span class="hljs-keyword">var</span> wss = <span class="hljs-keyword">new</span> WebSocket.Server({ port: <span class="hljs-number">8181</span> });
+<span class="hljs-built_in">console</span>.log(wss.readyState); <span class="hljs-comment">//0</span>
+</code></pre>
+<ul>
+<li>0&#xFF1A;&#x6B63;&#x5728;&#x8FDE;&#x63A5;</li>
+<li>1&#xFF1A;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#xFF0C;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x901A;&#x4FE1;</li>
+<li>2&#xFF1A;&#x6B63;&#x5728;&#x5173;&#x95ED;&#x8FDE;&#x63A5;</li>
+<li>3&#x3001;&#x5DF2;&#x7ECF;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#xFF0C;&#x6216;&#x8005;&#x6253;&#x5F00;&#x8FDE;&#x63A5;&#x5931;&#x8D25;</li>
+</ul>
+<h6 id="3&#x3001;onopen">3&#x3001;onopen</h6>
+<p>onopen&#x5C5E;&#x6027;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x4E4B;&#x540E;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x770B;&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x4E4B;&#x540E;&#x6253;&#x5370;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#xFF0C;&#x5E76;&#x4E14;&#x8C03;&#x7528;send&#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x91CC;&#x5982;&#x679C;&#x8981;&#x662F;&#x6307;&#x5B9A;&#x591A;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;addEventListener&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-jsx">ws.addEventListener(<span class="hljs-string">&quot;open&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;client&#xFF1A;&#x6253;&#x5F00;&#x8FDE;&#x63A5;&quot;</span>);
+});
+ws.addEventListener(<span class="hljs-string">&quot;open&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  ws.send(<span class="hljs-string">&quot;&#x6211;&#x5728;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x4E2D;&#x53D1;&#x9001;&#x6D88;&#x606F;&quot;</span>);
+});
+</code></pre>
+<h6 id="4&#x3001;onclose">4&#x3001;onclose</h6>
+<p>&#x548C;onopen&#x4E00;&#x6837;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x7684;&#x56DE;&#x8C03;&#xFF0C;&#x8FD9;&#x91CC;&#x4E0D;&#x8D58;&#x8FF0;&#x3002;</p>
+<h6 id="5&#x3001;onmessage">5&#x3001;onmessage</h6>
+<p>&#x6307;&#x5B9A;&#x63A5;&#x6536;&#x5230;&#x670D;&#x52A1;&#x5668;&#x6570;&#x636E;&#x540E;&#x7684;&#x56DE;&#x8C03;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x56DE;&#x8C03;&#x4E2D;&#x901A;&#x8FC7;<code>&#x53C2;&#x6570;.data</code>&#x83B7;&#x53D6;&#x5230;&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<h6 id="6&#x3001;onerror">6&#x3001;onerror</h6>
+<p>&#x6307;&#x5B9A;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x65F6;&#x7684;&#x56DE;&#x8C03;</p>
+<h6 id="7&#x3001;send">7&#x3001;send</h6>
+<p>&#x7528;&#x6765;&#x53D1;&#x9001;&#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x4EC5;&#x4EC5;&#x662F;&#x666E;&#x901A;&#x5B57;&#x7B26;&#x4E32;&#x6587;&#x672C;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#xFF08;&#x6BD4;&#x5982;ArrayBuffer &#xFF09;&#x3002;</p>
+<h6 id="8&#x3001;bufferedamount">8&#x3001;bufferedAmount</h6>
+<p>&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x8FD8;&#x6709;&#x591A;&#x5C11;&#x6570;&#x636E;&#x6CA1;&#x6709;&#x53D1;&#x51FA;&#x53BB;&#xFF0C;&#x7528;&#x6765;&#x5224;&#x65AD;&#x662F;&#x5426;&#x53D1;&#x9001;&#x7ED3;&#x675F;&#x3002;</p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">if</span>(ws.bufferedAmount === <span class="hljs-number">0</span>){
+    console.<span class="hljs-built_in">log</span>(<span class="hljs-string">&quot;&#x53D1;&#x9001;&#x5B8C;&#x6BD5;&quot;</span>);
+}<span class="hljs-keyword">else</span>{
+    console.<span class="hljs-built_in">log</span>(<span class="hljs-string">&quot;&#x8FD8;&#x6709;&quot;</span>, ws.bufferedAmount, <span class="hljs-string">&quot;&#x6570;&#x636E;&#x6CA1;&#x6709;&#x53D1;&#x9001;&quot;</span>);
+}
+</code></pre>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<hr>
+<p>WebSocket&#x7684;&#x4F7F;&#x7528;&#x8FD8;&#x662F;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;&#xFF0C;&#x7531;&#x4E8E;&#x5DE5;&#x4F5C;&#x8FD8;&#x6CA1;&#x6709;&#x78B0;&#x5230;&#x975E;&#x8981;&#x4F7F;&#x7528;&#x8BE5;&#x534F;&#x8BAE;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x76F4;&#x6CA1;&#x6709;&#x673A;&#x4F1A;&#x5B9E;&#x6218;&#x4E00;&#x4E0B;&#x3002;&#x53EA;&#x80FD;&#x81EA;&#x5DF1;&#x5199;&#x4E2A;&#x7B80;&#x5355;&#x7684;demo&#x73A9;&#x3002;&#x5982;&#x6709;&#x4E0D;&#x8DB3;&#x6B22;&#x8FCE;&#x6307;&#x6B63;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Socket.html" class="navigation navigation-prev " aria-label="Previous page: 第1节：Socket">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Http.html" class="navigation navigation-next " aria-label="Next page: 第3节：Http">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第2节：WebSocket","level":"1.5.2","depth":2,"next":{"title":"第3节：Http","level":"1.5.3","depth":2,"path":"Chapter3/Http.md","ref":"Chapter3/Http.md","articles":[]},"previous":{"title":"第1节：Socket","level":"1.5.1","depth":2,"path":"Chapter3/Socket.md","ref":"Chapter3/Socket.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter3/WebSocket.md","mtime":"2019-12-05T08:19:34.011Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-05T14:50:49.829Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1353 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第1节：通信数据格式Json · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="amis.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../Abstract.html">
+            
+                <a href="../Abstract.html">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter1/">
+            
+                <a href="../Chapter1/">
+            
+                    
+                    第一章 从应用谈起
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Chapter1/Env.html">
+            
+                <a href="../Chapter1/Env.html">
+            
+                    
+                    第1节：开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Chapter1/Simple.html">
+            
+                <a href="../Chapter1/Simple.html">
+            
+                    
+                    第2节：极简应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Chapter1/Fun.html">
+            
+                <a href="../Chapter1/Fun.html">
+            
+                    
+                    第3节：有趣的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chapter2/">
+            
+                <a href="../Chapter2/">
+            
+                    
+                    第二章 语言基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Chapter2/Python.html">
+            
+                <a href="../Chapter2/Python.html">
+            
+                    
+                    第1节：Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Chapter2/JavaScript.html">
+            
+                <a href="../Chapter2/JavaScript.html">
+            
+                    
+                    第2节：JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Chapter2/Html.html">
+            
+                <a href="../Chapter2/Html.html">
+            
+                    
+                    第3节：Html
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Chapter2/CodeStandard.html">
+            
+                <a href="../Chapter2/CodeStandard.html">
+            
+                    
+                    第4节：代码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../Chapter2/Structure.html">
+            
+                <a href="../Chapter2/Structure.html">
+            
+                    
+                    第5节：软件架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chapter3/">
+            
+                <a href="../Chapter3/">
+            
+                    
+                    第三章 网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Chapter3/Socket.html">
+            
+                <a href="../Chapter3/Socket.html">
+            
+                    
+                    第1节：Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Chapter3/WebSocket.html">
+            
+                <a href="../Chapter3/WebSocket.html">
+            
+                    
+                    第2节：WebSocket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Chapter3/Http.html">
+            
+                <a href="../Chapter3/Http.html">
+            
+                    
+                    第3节：Http
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../Chapter3/Rpc.html">
+            
+                <a href="../Chapter3/Rpc.html">
+            
+                    
+                    第4节：Rpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第四章 可视化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="json.html">
+            
+                <a href="json.html">
+            
+                    
+                    第1节：通信数据格式Json
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="amis.html">
+            
+                <a href="amis.html">
+            
+                    
+                    第2节：可配置生成的前端框架Amis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="vue.html">
+            
+                <a href="vue.html">
+            
+                    
+                    第3节：组件前端Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="Web.html">
+            
+                <a href="Web.html">
+            
+                    
+                    第4节：前端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="Client.html">
+            
+                <a href="Client.html">
+            
+                    
+                    第5节：客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Chapter5/">
+            
+                <a href="../Chapter5/">
+            
+                    
+                    第五章 静态爬虫
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Chapter5/Xpath.html">
+            
+                <a href="../Chapter5/Xpath.html">
+            
+                    
+                    第1节 xpath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Chapter5/Bs4.html">
+            
+                <a href="../Chapter5/Bs4.html">
+            
+                    
+                    第2节 bs4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Chapter5/tmp.html">
+            
+                <a href="../Chapter5/tmp.html">
+            
+                    
+                    第3节 实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Chapter6/">
+            
+                <a href="../Chapter6/">
+            
+                    
+                    第六章 动态爬虫
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Chapter6/Selenium.html">
+            
+                <a href="../Chapter6/Selenium.html">
+            
+                    
+                    第1节 Selenium
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Chapter7/">
+            
+                <a href="../Chapter7/">
+            
+                    
+                    第七章 数据分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Chapter7/echart.html">
+            
+                <a href="../Chapter7/echart.html">
+            
+                    
+                    第1节 Echart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../Chapter7/Visual.html">
+            
+                <a href="../Chapter7/Visual.html">
+            
+                    
+                    第2节 数据可视化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Chapter8/">
+            
+                <a href="../Chapter8/">
+            
+                    
+                    第八章 自然语言处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Chapter8/Emotion.html">
+            
+                <a href="../Chapter8/Emotion.html">
+            
+                    
+                    第1节：情感分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Chapter8/Robot.html">
+            
+                <a href="../Chapter8/Robot.html">
+            
+                    
+                    第2节：聊天机器人
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Chapter8/TextGen.html">
+            
+                <a href="../Chapter8/TextGen.html">
+            
+                    
+                    第3节：智能文本生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Chapter9/">
+            
+                <a href="../Chapter9/">
+            
+                    
+                    第九章 系统构建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Chapter9/IM.html">
+            
+                <a href="../Chapter9/IM.html">
+            
+                    
+                    第1节：及时通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Chapter9/SearchEngine.html">
+            
+                <a href="../Chapter9/SearchEngine.html">
+            
+                    
+                    第2节：搜索引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Chapter10/">
+            
+                <a href="../Chapter10/">
+            
+                    
+                    第十章 系统集成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../Chapter1/CrossLanguage.html">
+            
+                <a href="../Chapter1/CrossLanguage.html">
+            
+                    
+                    第1节：跨语言调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../Chapter10/Rpc.html">
+            
+                <a href="../Chapter10/Rpc.html">
+            
+                    
+                    第2节：Rpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../Chapter10/Communication.html">
+            
+                <a href="../Chapter10/Communication.html">
+            
+                    
+                    第3节：通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Chapter11/">
+            
+                <a href="../Chapter11/">
+            
+                    
+                    第十一章 系统优化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../Chapter11/Analyse.html">
+            
+                <a href="../Chapter11/Analyse.html">
+            
+                    
+                    第1节：性能分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../Chapter11/Algorithm.html">
+            
+                <a href="../Chapter11/Algorithm.html">
+            
+                    
+                    第2节：算法优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../Chapter11/Compile.html">
+            
+                <a href="../Chapter11/Compile.html">
+            
+                    
+                    第3节：编译优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../Chapter11/CrossLanguage.html">
+            
+                <a href="../Chapter11/CrossLanguage.html">
+            
+                    
+                    第4节：跨语言调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../Chapter11/Structure.html">
+            
+                <a href="../Chapter11/Structure.html">
+            
+                    
+                    第5节：架构优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="../Chapter11/Montor.html">
+            
+                <a href="../Chapter11/Montor.html">
+            
+                    
+                    第6节：系统监控优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../Chapter12/">
+            
+                <a href="../Chapter12/">
+            
+                    
+                    后记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../Chapter13/">
+            
+                <a href="../Chapter13/">
+            
+                    
+                    参考文献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../Chapter14/">
+            
+                <a href="../Chapter14/">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../Chapter14/gitbook.html">
+            
+                <a href="../Chapter14/gitbook.html">
+            
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../Chapter14/git.html">
+            
+                <a href="../Chapter14/git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../Chapter14/markdown.html">
+            
+                <a href="../Chapter14/markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="../Chapter14/nginx.html">
+            
+                <a href="../Chapter14/nginx.html">
+            
+                    
+                    Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../Chapter14/">
+            
+                <a href="../Chapter14/">
+            
+                    
+                    作者简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第1节：通信数据格式Json</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;1&#x8282;&#xFF1A;&#x901A;&#x4FE1;&#x6570;&#x636E;&#x683C;&#x5F0F;json">&#x7B2C;1&#x8282;&#xFF1A;&#x901A;&#x4FE1;&#x6570;&#x636E;&#x683C;&#x5F0F;Json</h1>
+<h2 id="json">Json</h2>
+<p>JSON&#xFF1A;JavaScript &#x5BF9;&#x8C61;&#x8868;&#x793A;&#x6CD5;&#xFF08;JavaScript Object Notation&#xFF09;&#x3002;**</p>
+<p><strong>JSON &#x662F;&#x5B58;&#x50A8;&#x548C;&#x4EA4;&#x6362;&#x6587;&#x672C;&#x4FE1;&#x606F;&#x7684;&#x8BED;&#x6CD5;&#x3002;&#x7C7B;&#x4F3C; XML&#x3002;</strong></p>
+<p><strong>JSON &#x6BD4; XML &#x66F4;&#x5C0F;&#x3001;&#x66F4;&#x5FEB;&#xFF0C;&#x66F4;&#x6613;&#x89E3;&#x6790;&#x3002;</strong></p>
+<h2 id="&#x6BCF;&#x4E00;&#x7AE0;&#x4E2D;&#x7528;&#x5230;&#x7684;&#x5B9E;&#x4F8B;">&#x6BCF;&#x4E00;&#x7AE0;&#x4E2D;&#x7528;&#x5230;&#x7684;&#x5B9E;&#x4F8B;</h2>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;employees&quot;</span>:[
+        {
+            <span class="hljs-string">&quot;firstName&quot;</span>:<span class="hljs-string">&quot;Bill&quot;</span>,
+            <span class="hljs-string">&quot;lastName&quot;</span>:<span class="hljs-string">&quot;Gates&quot;</span>
+        },
+        {
+            <span class="hljs-string">&quot;firstName&quot;</span>:<span class="hljs-string">&quot;George&quot;</span>,
+            <span class="hljs-string">&quot;lastName&quot;</span>:<span class="hljs-string">&quot;Bush&quot;</span>
+        },
+        {
+            <span class="hljs-string">&quot;firstName&quot;</span>:<span class="hljs-string">&quot;Thomas&quot;</span>,
+            <span class="hljs-string">&quot;lastName&quot;</span>:<span class="hljs-string">&quot;Carter&quot;</span>
+        }
+    ]
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A; employee &#x5BF9;&#x8C61;&#x662F;&#x5305;&#x542B; 3 &#x4E2A;&#x5458;&#x5DE5;&#x8BB0;&#x5F55;&#xFF08;&#x5BF9;&#x8C61;&#xFF09;&#x7684;&#x6570;&#x7EC4;&#x3002;</p>
+<h2 id="&#x4EC0;&#x4E48;&#x662F;-json-&#xFF1F;">&#x4EC0;&#x4E48;&#x662F; JSON &#xFF1F;</h2>
+<ul>
+<li>JSON &#x6307;&#x7684;&#x662F; JavaScript &#x5BF9;&#x8C61;&#x8868;&#x793A;&#x6CD5;&#xFF08;<em>J</em>ava<em>S</em>cript <em>O</em>bject <em>N</em>otation&#xFF09;</li>
+<li>JSON &#x662F;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x6587;&#x672C;&#x6570;&#x636E;&#x4EA4;&#x6362;&#x683C;&#x5F0F;</li>
+<li>JSON &#x72EC;&#x7ACB;&#x4E8E;&#x8BED;&#x8A00; *</li>
+<li>JSON &#x5177;&#x6709;&#x81EA;&#x6211;&#x63CF;&#x8FF0;&#x6027;&#xFF0C;&#x66F4;&#x6613;&#x7406;&#x89E3;</li>
+</ul>
+<p>* JSON &#x4F7F;&#x7528; JavaScript &#x8BED;&#x6CD5;&#x6765;&#x63CF;&#x8FF0;&#x6570;&#x636E;&#x5BF9;&#x8C61;&#xFF0C;&#x4F46;&#x662F; JSON &#x4ECD;&#x7136;&#x72EC;&#x7ACB;&#x4E8E;&#x8BED;&#x8A00;&#x548C;&#x5E73;&#x53F0;&#x3002;JSON &#x89E3;&#x6790;&#x5668;&#x548C; JSON &#x5E93;&#x652F;&#x6301;&#x8BB8;&#x591A;&#x4E0D;&#x540C;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x3002;</p>
+<h3 id="json-&#x8BED;&#x6CD5;&#x89C4;&#x5219;">JSON &#x8BED;&#x6CD5;&#x89C4;&#x5219;</h3>
+<ul>
+<li>&#x6570;&#x636E;&#x5728;&#x540D;&#x79F0;/&#x503C;&#x5BF9;&#x4E2D;</li>
+<li>&#x6570;&#x636E;&#x7531;&#x9017;&#x53F7;&#x5206;&#x9694;</li>
+<li>&#x82B1;&#x62EC;&#x53F7;&#x4FDD;&#x5B58;&#x5BF9;&#x8C61;</li>
+<li>&#x65B9;&#x62EC;&#x53F7;&#x4FDD;&#x5B58;&#x6570;&#x7EC4;</li>
+</ul>
+<h3 id="json-&#x540D;&#x79F0;&#x503C;&#x5BF9;">JSON &#x540D;&#x79F0;/&#x503C;&#x5BF9;</h3>
+<p>JSON &#x6570;&#x636E;&#x7684;&#x4E66;&#x5199;&#x683C;&#x5F0F;&#x662F;&#xFF1A;<code>{Key:Value}</code>&#x3001;<code>{Key:Array}</code>&#x3002;</p>
+<p><code>{Key:Value}</code>&#xFF0C;&#x524D;&#x9762;&#x662F;&#x952E;&#xFF0C;&#x4E2D;&#x95F4;&#x662F;&#x82F1;&#x6587;&#x7684;&#x201C;:&#x201D;&#xFF08;&#x5192;&#x53F7;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x503C;&#x3002;&#x4F46;&#x662F;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x5982;&#x679C;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E25;&#x683C;&#x6765;&#x8BF4;&#x90FD;&#x662F;&#x82F1;&#x6587;&#x53CC;&#x5F15;&#x53F7;&#x5F15;&#x8D77;&#x6765;&#x7684;</p>
+<p>&#x5982;&#xFF1A;<code>{&quot;Key&quot;:&quot;Value&quot;}</code></p>
+<pre><code>{&quot;name&quot; : &quot;&#x9E7F;&#x6657;&quot;}
+</code></pre><p>&#x8FD9;&#x5F88;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#xFF0C;&#x7B49;&#x4EF7;&#x4E8E;&#x8FD9;&#x6761; JavaScript &#x8BED;&#x53E5;&#xFF1A;</p>
+<pre><code>name = &quot;&#x9E7F;&#x6657;&quot;
+</code></pre><h3 id="json-&#x503C;&#x8303;&#x56F4;">JSON &#x503C;&#x8303;&#x56F4;</h3>
+<ul>
+<li>&#x6570;&#x5B57;&#xFF08;&#x6574;&#x6570;&#x6216;&#x6D6E;&#x70B9;&#x6570;&#xFF09;</li>
+<li>&#x5B57;&#x7B26;&#x4E32;&#xFF08;&#x5728;&#x53CC;&#x5F15;&#x53F7;&#x4E2D;&#xFF09;</li>
+<li>&#x903B;&#x8F91;&#x503C;&#xFF08;<code>true</code> &#x6216; <code>false</code>&#xFF09;</li>
+<li>&#x6570;&#x7EC4;&#xFF08;&#x5728;&#x65B9;&#x62EC;&#x53F7;&#x4E2D;&#xFF09;</li>
+<li>&#x5BF9;&#x8C61;&#xFF08;&#x5728;&#x82B1;&#x62EC;&#x53F7;&#x4E2D;&#xFF09;</li>
+<li><code>null</code></li>
+</ul>
+<h3 id="json-&#x5BF9;&#x8C61;">JSON &#x5BF9;&#x8C61;</h3>
+<p>JSON &#x5BF9;&#x8C61;&#x5728;&#x82B1;&#x62EC;&#x53F7;&#x4E2D;&#xFF0C;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x540D;&#x79F0;/&#x503C;&#x5BF9;&#xFF0C;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>{    &quot;name&quot;: &quot;&#x9E7F;&#x6657;&quot;,    &quot;age&quot;: 26,    &quot;birthday&quot;: &quot;1990&#x5E74;4&#x6708;20&#x65E5;&quot;,}
+</code></pre><p>&#x8FD9;&#x4E00;&#x70B9;&#x4E5F;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#xFF0C;&#x4E0E;&#x8FD9;&#x6761; JavaScript &#x8BED;&#x53E5;&#x7B49;&#x4EF7;&#xFF1A;</p>
+<pre><code>name = &quot;&#x9E7F;&#x6657;&quot;;age = 26;birthday = &quot;1990&#x5E74;4&#x6708;20&#x65E5;&quot;;
+</code></pre><h3 id="json-&#x6570;&#x7EC4;">JSON &#x6570;&#x7EC4;</h3>
+<p>JSON &#x6570;&#x7EC4;&#x5728;&#x65B9;&#x62EC;&#x53F7;&#xFF08;&quot;[]&quot;&#xFF09;&#x4E2D;&#x4E66;&#x5199;&#xFF0C;&#x6570;&#x7EC4;&#x53EF;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5982;&#x4E0B;&#x201C;star_male&#x201D;&#x63CF;&#x8FF0;</p>
+<pre><code>{    &quot;star_male&quot;: [        {            &quot;name&quot;: &quot;&#x9E7F;&#x6657;&quot;,            &quot;age&quot;: &quot;26&quot;        },        {            &quot;nickname&quot;: &quot;&#x674E;&#x6613;&#x5CF0;&quot;,            &quot;age&quot;: &quot;29&quot;        },        {            &quot;nickname&quot;: &quot;&#x9648;&#x8D6B;&quot;,            &quot;lastName&quot;: &quot;31&quot;        }    ]}
+</code></pre><p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5BF9;&#x8C61; &quot;star_male&quot; &#x662F;&#x5305;&#x542B;&#x4E09;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#x3002;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x4EE3;&#x8868;&#x4E00;&#x6761;&#x5173;&#x4E8E;&#x4E00;&#x4E2A;&#x660E;&#x661F;&#xFF08;&#x59D3;&#x540D;&#x548C;&#x5E74;&#x9F84;&#xFF09;&#x7684;&#x8BB0;&#x5F55;&#x3002;</p>
+<h3 id="&#x5E38;&#x89C1;&#x7684;-json-&#x683C;&#x5F0F;">&#x5E38;&#x89C1;&#x7684; JSON &#x683C;&#x5F0F;</h3>
+<ul>
+<li><code>{&quot;key&quot;:&quot;value&quot;}</code>&#xFF0C;&#x6700;&#x7B80;&#x5355;&#x7684;JSON &#x683C;&#x5F0F;&#x3002;</li>
+<li><code>{&quot;key1&quot;:&quot;value1&quot;,&quot;key2&quot;:&quot;value2&quot;}</code>&#xFF0C;&#x4E00;&#x4E2A;JSON&#x4E2D;&#x6709;&#x591A;&#x4E2A;&#x952E;&#x503C;&#x5BF9;&#x7684;&#x8868;&#x8FBE;&#x65B9;&#x5F0F;&#x3002;</li>
+<li><code>{&quot;key&quot;:[&quot;a&quot;,&quot;b&quot;,&quot;sojson.com&quot;]}</code>&#xFF0C;value&#x662F;&#x4E00;&#x4E2A;Array &#x7684;JSON&#x683C;&#x5F0F;&#x3002;</li>
+<li><code>{&quot;sojson&quot;:[&quot;5&#x5E74;&quot;,&quot;JSON&#x5728;&#x7EBF;&#x89E3;&#x6790;&quot;,&quot;sojson.com&quot;,true,1,null]}</code>&#xFF0C;value&#x662F;&#x4E00;&#x4E2A;Array &#x7684;JSON&#x683C;&#x5F0F;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x6709;&#x591A;&#x91CD;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x6709;String&#xFF0C;Boolean&#xFF0C;Number&#xFF0C;null&#x3002;</li>
+<li><code>{&quot;key&quot;:{&quot;json&quot;:&quot;json for javascript&quot;}}</code>&#xFF0C;value &#x662F;JSONObject&#x7684;JSON&#x683C;&#x5F0F;&#x3002;</li>
+</ul>
+<p>JSON &amp;&amp; XML</p>
+<h3 id="json">JSON</h3>
+<ul>
+<li>JSON &#x662F;&#x7EAF;&#x6587;&#x672C;</li>
+<li>JSON &#x5177;&#x6709;&#x201C;&#x81EA;&#x6211;&#x63CF;&#x8FF0;&#x6027;&#x201D;&#xFF08;&#x4EBA;&#x7C7B;&#x53EF;&#x8BFB;&#xFF09;</li>
+<li>JSON &#x5177;&#x6709;&#x5C42;&#x7EA7;&#x7ED3;&#x6784;&#xFF08;&#x503C;&#x4E2D;&#x5B58;&#x5728;&#x503C;&#xFF09;</li>
+<li>JSON &#x53EF;&#x901A;&#x8FC7; JavaScript &#x8FDB;&#x884C;&#x89E3;&#x6790;</li>
+<li>JSON &#x6570;&#x636E;&#x53EF;&#x4F7F;&#x7528; AJAX &#x8FDB;&#x884C;&#x4F20;&#x8F93;</li>
+</ul>
+<h3 id="json--xml&#x4E0D;&#x540C;&#x4E4B;&#x5904;">JSON &amp;&amp; XML&#x4E0D;&#x540C;&#x4E4B;&#x5904;</h3>
+<ul>
+<li>&#x6CA1;&#x6709;&#x7ED3;&#x675F;&#x6807;&#x7B7E;</li>
+<li>&#x66F4;&#x77ED;</li>
+<li>&#x8BFB;&#x5199;&#x7684;&#x901F;&#x5EA6;&#x66F4;&#x5FEB;</li>
+<li>&#x80FD;&#x591F;&#x4F7F;&#x7528;&#x5185;&#x5EFA;&#x7684; JavaScript eval() &#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x89E3;&#x6790;</li>
+<li>&#x4F7F;&#x7528;&#x6570;&#x7EC4;</li>
+<li>&#x4E0D;&#x4F7F;&#x7528;&#x4FDD;&#x7559;&#x5B57;</li>
+</ul>
+<h3 id="&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;-json&#xFF1F;json-&#x7684;&#x4F18;&#x70B9;">&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528; JSON&#xFF1F;<em>JSON &#x7684;&#x4F18;&#x70B9;</em></h3>
+<ul>
+<li>&#x66F4;&#x77ED;</li>
+<li>&#x8BFB;&#x5199;&#x7684;&#x901F;&#x5EA6;&#x66F4;&#x5FEB;</li>
+<li>&#x80FD;&#x591F;&#x4F7F;&#x7528;&#x5185;&#x5EFA;&#x7684; JavaScript eval() &#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x89E3;&#x6790;</li>
+<li>&#x4F7F;&#x7528;&#x6570;&#x7EC4;</li>
+<li>&#x4E0D;&#x4F7F;&#x7528;&#x4FDD;&#x7559;&#x5B57;</li>
+<li>... ...</li>
+</ul>
+<p>&#x5BF9;&#x4E8E; AJAX &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6765;&#x8BF4;&#xFF0C;JSON &#x6BD4; XML &#x66F4;&#x5FEB;&#x66F4;&#x6613;&#x4F7F;&#x7528;&#x3002;</p>
+<h3 id="&#x4F7F;&#x7528;-xml">&#x4F7F;&#x7528; XML</h3>
+<ul>
+<li>&#x8BFB;&#x53D6; XML &#x6587;&#x6863;</li>
+<li>&#x4F7F;&#x7528; XML DOM &#x6765;&#x5FAA;&#x73AF;&#x904D;&#x5386;&#x6587;&#x6863;</li>
+<li>&#x8BFB;&#x53D6;&#x503C;&#x5E76;&#x5B58;&#x50A8;&#x5728;&#x53D8;&#x91CF;&#x4E2D;</li>
+</ul>
+<h3 id="&#x4F7F;&#x7528;json">&#x4F7F;&#x7528;JSON</h3>
+<ul>
+<li>&#x8BFB;&#x53D6; JSON &#x5B57;&#x7B26;&#x4E32;</li>
+<li>&#x7528; eval() &#x5904;&#x7406; JSON &#x5B57;&#x7B26;&#x4E32;</li>
+</ul>
+<h1 id="python-json">Python JSON</h1>
+<p>&#x672C;&#x7AE0;&#x8282;&#x6211;&#x4EEC;&#x5C06;&#x4E3A;&#x5927;&#x5BB6;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x4F7F;&#x7528; Python &#x8BED;&#x8A00;&#x6765;&#x7F16;&#x7801;&#x548C;&#x89E3;&#x7801; JSON &#x5BF9;&#x8C61;&#x3002;</p>
+<p>JSON(JavaScript Object Notation) &#x662F;&#x4E00;&#x79CD;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x6570;&#x636E;&#x4EA4;&#x6362;&#x683C;&#x5F0F;&#xFF0C;&#x6613;&#x4E8E;&#x4EBA;&#x9605;&#x8BFB;&#x548C;&#x7F16;&#x5199;&#x3002;</p>
+<hr>
+<h2 id="json-&#x51FD;&#x6570;">JSON &#x51FD;&#x6570;</h2>
+<p>&#x4F7F;&#x7528; JSON &#x51FD;&#x6570;&#x9700;&#x8981;&#x5BFC;&#x5165; json &#x5E93;&#xFF1A;<strong>import json</strong>&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x51FD;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">json.dumps</td>
+<td style="text-align:left">&#x5C06; Python &#x5BF9;&#x8C61;&#x7F16;&#x7801;&#x6210; JSON &#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td style="text-align:left">json.loads</td>
+<td style="text-align:left">&#x5C06;&#x5DF2;&#x7F16;&#x7801;&#x7684; JSON &#x5B57;&#x7B26;&#x4E32;&#x89E3;&#x7801;&#x4E3A; Python &#x5BF9;&#x8C61;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="jsondumps">json.dumps</h2>
+<p>json.dumps &#x7528;&#x4E8E;&#x5C06; Python &#x5BF9;&#x8C61;&#x7F16;&#x7801;&#x6210; JSON &#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<h3 id="&#x8BED;&#x6CD5;">&#x8BED;&#x6CD5;</h3>
+<pre><code>json.dumps(obj, skipkeys=False, ensure_ascii=True, check_circular=True, allow_nan=True, cls=None, indent=None, separators=None, encoding=&quot;utf-8&quot;, default=None, sort_keys=False, **kw)
+</code></pre><h3 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h3>
+<p>&#x4EE5;&#x4E0B;&#x5B9E;&#x4F8B;&#x5C06;&#x6570;&#x7EC4;&#x7F16;&#x7801;&#x4E3A; JSON &#x683C;&#x5F0F;&#x6570;&#x636E;&#xFF1A;</p>
+<pre><code>#!/usr/bin/python
+import json
+
+data = [ { &apos;a&apos; : 1, &apos;b&apos; : 2, &apos;c&apos; : 3, &apos;d&apos; : 4, &apos;e&apos; : 5 } ]
+
+json = json.dumps(data)
+print json
+</code></pre><p>&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre><code>[{&quot;a&quot;: 1, &quot;c&quot;: 3, &quot;b&quot;: 2, &quot;e&quot;: 5, &quot;d&quot;: 4}]
+</code></pre><p>&#x4F7F;&#x7528;&#x53C2;&#x6570;&#x8BA9; JSON &#x6570;&#x636E;&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; import json
+&gt;&gt;&gt; print json.dumps({&apos;a&apos;: &apos;Runoob&apos;, &apos;b&apos;: 7}, sort_keys=True, indent=4, separators=(&apos;,&apos;, &apos;: &apos;))
+{
+    &quot;a&quot;: &quot;Runoob&quot;,
+    &quot;b&quot;: 7
+}
+</code></pre><p>python &#x539F;&#x59CB;&#x7C7B;&#x578B;&#x5411; json &#x7C7B;&#x578B;&#x7684;&#x8F6C;&#x5316;&#x5BF9;&#x7167;&#x8868;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Python</th>
+<th style="text-align:left">JSON</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">dict</td>
+<td style="text-align:left">object</td>
+</tr>
+<tr>
+<td style="text-align:left">list, tuple</td>
+<td style="text-align:left">array</td>
+</tr>
+<tr>
+<td style="text-align:left">str, unicode</td>
+<td style="text-align:left">string</td>
+</tr>
+<tr>
+<td style="text-align:left">int, long, float</td>
+<td style="text-align:left">number</td>
+</tr>
+<tr>
+<td style="text-align:left">True</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">False</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">None</td>
+<td style="text-align:left">null</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="jsonloads">json.loads</h2>
+<p>json.loads &#x7528;&#x4E8E;&#x89E3;&#x7801; JSON &#x6570;&#x636E;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x8FD4;&#x56DE; Python &#x5B57;&#x6BB5;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</p>
+<h3 id="&#x8BED;&#x6CD5;">&#x8BED;&#x6CD5;</h3>
+<pre><code>json.loads(s[, encoding[, cls[, object_hook[, parse_float[, parse_int[, parse_constant[, object_pairs_hook[, **kw]]]]]]]])
+</code></pre><h3 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h3>
+<p>&#x4EE5;&#x4E0B;&#x5B9E;&#x4F8B;&#x5C55;&#x793A;&#x4E86;Python &#x5982;&#x4F55;&#x89E3;&#x7801; JSON &#x5BF9;&#x8C61;&#xFF1A;</p>
+<pre><code>#!/usr/bin/python
+import json
+
+jsonData = &apos;{&quot;a&quot;:1,&quot;b&quot;:2,&quot;c&quot;:3,&quot;d&quot;:4,&quot;e&quot;:5}&apos;;
+
+text = json.loads(jsonData)
+print text
+</code></pre><p>&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre><code>{u&apos;a&apos;: 1, u&apos;c&apos;: 3, u&apos;b&apos;: 2, u&apos;e&apos;: 5, u&apos;d&apos;: 4}
+</code></pre><p>json &#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x5230; python &#x7684;&#x7C7B;&#x578B;&#x5BF9;&#x7167;&#x8868;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">JSON</th>
+<th style="text-align:left">Python</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">object</td>
+<td style="text-align:left">dict</td>
+</tr>
+<tr>
+<td style="text-align:left">array</td>
+<td style="text-align:left">list</td>
+</tr>
+<tr>
+<td style="text-align:left">string</td>
+<td style="text-align:left">unicode</td>
+</tr>
+<tr>
+<td style="text-align:left">number (int)</td>
+<td style="text-align:left">int, long</td>
+</tr>
+<tr>
+<td style="text-align:left">number (real)</td>
+<td style="text-align:left">float</td>
+</tr>
+<tr>
+<td style="text-align:left">true</td>
+<td style="text-align:left">True</td>
+</tr>
+<tr>
+<td style="text-align:left">false</td>
+<td style="text-align:left">False</td>
+</tr>
+<tr>
+<td style="text-align:left">null</td>
+<td style="text-align:left">None</td>
+</tr>
+</tbody>
+</table>
+<h1 id="javascript-json">JavaScript JSON</h1>
+<h2 id="jsonparse">JSON.parse()</h2>
+<p><code>JSON.parse()</code>&#x662F;Javascript&#x4E2D;&#x4E00;&#x4E2A;&#x5E38;&#x7528;&#x7684; JSON &#x8F6C;&#x6362;&#x65B9;&#x6CD5;&#xFF0C;<code>JSON.parse()</code>&#x53EF;&#x4EE5;&#x628A;JSON&#x89C4;&#x5219;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x4E3A;JSONObject&#xFF0C;<code>JSON.parse()</code>&#x5F88;&#x65B9;&#x4FBF;&#xFF0C;&#x5E76;&#x4E14;&#x51E0;&#x4E4E;&#x652F;&#x6301;&#x6240;&#x6709;&#x6D4F;&#x89C8;&#x5668;&#x3002;</p>
+<h3 id="jsonparse-&#x8BED;&#x6CD5;">JSON.parse() &#x8BED;&#x6CD5;</h3>
+<pre><code>JSON.parse(text[, reviver])//text:&#x9700;&#x8981;&#x88AB;&#x8F6C;&#x6362;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;//[, reviver] : &#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x65B9;&#x6CD5;&#x3002;
+</code></pre><p>&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x4E00;&#x4E2A; <a href="https://www.sojson.com/json/json_object.html" target="_blank">JSONObject</a>&#x3002;</p>
+<h3 id="json-&#x89E3;&#x6790;&#x5B9E;&#x4F8B;">JSON &#x89E3;&#x6790;&#x5B9E;&#x4F8B;</h3>
+<p>&#x6211;&#x4EEC;&#x5F97;&#x5230;&#x7684;&#x6570;&#x636E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>&apos;{&quot;domain&quot; : &quot;sojson.com&quot;,&quot;author&quot;:&quot;soso&quot;}&apos;
+</code></pre><p>&#x5916;&#x9762;&#x88AB;&#x5F15;&#x53F7;&#x5305;&#x88F9;&#x8D77;&#x6765;&#x4E86;&#xFF0C;&#x8BC1;&#x660E;&#x5B83;&#x5C31;&#x662F;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x800C;&#x4E0D;&#x662F;JSON&#x5BF9;&#x8C61;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x8981;&#x8F6C;&#x6362;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;<code>JSON.parse()</code> &#x5C31;&#x53EF;&#x4EE5;&#x6D3E;&#x4E0A;&#x7528;&#x573A;&#x4E86;&#x3002;</p>
+<pre><code>var json = JSON.parse(&apos;{&quot;domain&quot; : &quot;sojson.com&quot;,&quot;author&quot;:&quot;soso&quot;}&apos;);
+</code></pre><p>&#x5982;&#x679C;&#x629B;&#x51FA;&#x8BED;&#x6CD5;&#x9519;&#x8BEF;&#xFF08;Uncaught SyntaxError&#xFF09;&#xFF0C;&#x6B63;&#x786E;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;JSONObject&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x8F93;&#x51FA;&#x4E00;&#x628A;&#xFF0C;&#x83B7;&#x53D6;&#x201C;domain&#x201D;&#x3002;</p>
+<pre><code>var json = JSON.parse(&apos;{&quot;domain&quot; : &quot;sojson.com&quot;,&quot;author&quot;:&quot;soso&quot;}&apos;);alert(&quot;json.domain = &quot; + json.domain);//alert(json[&apos;domain&apos;]);//&#x6216;&#x8005;&#x8FD9;&#x6837;&#x4E5F;&#x53EF;&#x4EE5;
+</code></pre><h2 id="jsonstringify">JSON.stringify()</h2>
+<p><code>JSON.stringify()</code>&#x662F;Javascript&#x4E2D;&#x4E00;&#x4E2A;&#x5E38;&#x7528;&#x7684;&#x5185;&#x7F6E; JSON &#x8F6C;&#x6362;&#x65B9;&#x6CD5;&#xFF0C;<code>JSON.stringify()</code>&#x53EF;&#x4EE5;&#x628A;JSONObject &#x8F6C;&#x5316;&#x4E3A; JSON &#x89C4;&#x5219;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x4E3A;&#xFF0C;<code>JSON.stringify()</code>&#x5F88;&#x65B9;&#x4FBF;&#xFF0C;&#x5E76;&#x4E14;&#x51E0;&#x4E4E;&#x652F;&#x6301;&#x6240;&#x6709;&#x6D4F;&#x89C8;&#x5668;&#x3002;</p>
+<h3 id="jsonstringify-&#x8BED;&#x6CD5;">JSON.stringify() &#x8BED;&#x6CD5;</h3>
+<pre><code>JSON.stringify(value[, replacer[, space]])
+</code></pre><h3 id="jsonstringify-&#x53C2;&#x6570;&#x8BF4;&#x660E;">JSON.stringify() &#x53C2;&#x6570;&#x8BF4;&#x660E;</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x53C2;&#x6570;&#x8BF4;&#x660E;</th>
+<th style="text-align:left">&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">value</td>
+<td style="text-align:left">&#x5C06;&#x8981;&#x5E8F;&#x5217;&#x5316;&#x6210; &#x4E00;&#x4E2A;JSON &#x5B57;&#x7B26;&#x4E32;&#x7684;&#x503C;&#x3002;</td>
+<td style="text-align:left">&#x5FC5;&#x9009;</td>
+</tr>
+<tr>
+<td style="text-align:left">replacer</td>
+<td style="text-align:left">&#x5982;&#x679C;&#x662F;&#x4E00;&#x4E2A;function&#xFF0C;&#x90A3;&#x4E48;&#x6BCF;&#x4E2A;&#x5E8F;&#x5217;&#x5316;&#x6210;JSON&#x7684;value&#x90FD;&#x4F1A;&#x7ECF;&#x8FC7;&#x8FD9;&#x4E2A;function&#xFF0C;&#x5982;&#x679C;&#x662F;&#x4E00;&#x4E2A;Array&#xFF0C;&#x90A3;&#x4E48;&#x5E8F;&#x5217;&#x5316;&#x540E;&#x7684;JSON&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;Key&#x5728;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x624D;&#x4F1A;&#x52A0;&#x5165;&#x5230;&#x8FD4;&#x56DE;&#x7684;JSON &#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x53BB;&#x3002;</td>
+<td style="text-align:left">&#x53EF;&#x9009;</td>
+</tr>
+<tr>
+<td style="text-align:left">space</td>
+<td style="text-align:left">&#x7528;&#x4E8E;&#x7F8E;&#x5316;JSON&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x4E00;&#x4E2A;Number&#x7C7B;&#x578B;&#xFF0C;&#x4EE3;&#x8868;&#x7684;&#x5C31;&#x662F;&#x591A;&#x5C11;&#x4E2A;&#x7A7A;&#x683C;&#x3002;&#x5982;&#x679C;&#x662F;0&#x6216;&#x8005;&#x5C0F;&#x4E8E;0&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x662F;&#x6CA1;&#x6709;&#x7A7A;&#x683C;&#xFF08;&#x548C;&#x4E0D;&#x586B;&#x6B64;&#x9879;&#x6CA1;&#x6709;&#x533A;&#x522B;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x90A3;&#x4E48;&#x76F4;&#x63A5;&#x586B;&#x5145;&#x3002;</td>
+<td style="text-align:left">&#x53EF;&#x9009;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="jsonstringify-&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;">JSON.stringify() &#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</h3>
+<p>&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x4E00;&#x4E2A; JSON&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5982;&#xFF1A;<code>&quot;{&quot;domain&quot;:&quot;sojson.com&quot;}&quot;</code>&#x3002;</p>
+<h3 id="jsonstringify-json-to-string">JSON.stringify() JSON To String</h3>
+<p>&#x6D4B;&#x8BD5;&#x6837;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>var json = {&quot;domain&quot; : &quot;sojson.com&quot;,&quot;author&quot;:&quot;soso&quot;}
+</code></pre><p>&#x5B83;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6B63;&#x5E38;&#x7684;JSON&#x5BF9;&#x8C61;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x628A;&#x5B83;&#x8F6C;&#x6362;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;<code>JSON.stringify()</code> &#x5C31;&#x53EF;&#x4EE5;&#x6D3E;&#x4E0A;&#x7528;&#x573A;&#x4E86;&#x3002;</p>
+<pre><code>var json = {&quot;domain&quot; : &quot;sojson.com&quot;,&quot;author&quot;:&quot;soso&quot;}alert(JSON.stringify(json));
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 第四章 可视化">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="amis.html" class="navigation navigation-next " aria-label="Next page: 第2节：可配置生成的前端框架Amis">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第1节：通信数据格式Json","level":"1.6.1","depth":2,"next":{"title":"第2节：可配置生成的前端框架Amis","level":"1.6.2","depth":2,"path":"Chapter4/amis.md","ref":"Chapter4/amis.md","articles":[]},"previous":{"title":"第四章 可视化","level":"1.6","depth":1,"path":"Chapter4/README.md","ref":"Chapter4/README.md","articles":[{"title":"第1节：通信数据格式Json","level":"1.6.1","depth":2,"path":"Chapter4/json.md","ref":"Chapter4/json.md","articles":[]},{"title":"第2节：可配置生成的前端框架Amis","level":"1.6.2","depth":2,"path":"Chapter4/amis.md","ref":"Chapter4/amis.md","articles":[]},{"title":"第3节：组件前端Vue","level":"1.6.3","depth":2,"path":"Chapter4/vue.md","ref":"Chapter4/vue.md","articles":[]},{"title":"第4节：前端","level":"1.6.4","depth":2,"path":"Chapter4/Web.md","ref":"Chapter4/Web.md","articles":[]},{"title":"第5节：客户端","level":"1.6.5","depth":2,"path":"Chapter4/Client.md","ref":"Chapter4/Client.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter4/json.md","mtime":"2019-12-05T07:33:26.503Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-05T14:50:49.829Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
