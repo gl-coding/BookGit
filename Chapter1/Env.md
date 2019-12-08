@@ -307,10 +307,10 @@ Icon Fonts
     安装插件 Easy LESS，保存自动编译，不需要配置（默认编译到当前目录下）
     如果需要编译为不同文件名的css文件，那么在less文件的最上面加上一行注释即可：// out: new-file.css
 
-# python工具：jupyter notebook
+# jupyter notebook
 
-> # 什么是Jupyter notebook?
->
+什么是Jupyter notebook?
+
 > jupyter Notebook（此前被称为 IPython notebook）是一个交互式笔记本，支持运行 40 多种编程语言。 Jupyter Notebook 的本质是一个 Web 应用程序，便于创建和共享文学化程序文档，支持实时代码，数学方程，可视化和 markdown。 用途包括：数据清理和转换，数值模拟，统计建模，机器学习等等
 
 jupyternotebook

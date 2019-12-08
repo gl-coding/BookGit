@@ -10,8 +10,6 @@ O(1) -> O(lg n) -> O(n lg n) -> O(n^2) -> O(n^3) -> O(n^k) -> O(k^n) -> O(n!)
 
 10.1 快速排序
 
-
-
 10.1.1 Python
 
 ```python

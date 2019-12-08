@@ -156,10 +156,6 @@ ret = odiv.select('a')
 print(ret)
 ```
 
- 
-
- 
-
 # 3.3 实战
 
 3.3.1

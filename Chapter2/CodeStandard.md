@@ -339,12 +339,8 @@ def func(arg1, arg2):
     """在这里写函数的一句话总结(如: 计算平均值).
 ```
 
+这里是具体描述.
 
-
-
-
-    这里是具体描述.
-     
     参数
     ----------
     arg1 : int
@@ -439,6 +435,7 @@ if __name__ == '__main__':
     school_name = ''
 ```
 
+5、常量
 
 常量采用全大写，如有多个单词，使用下划线隔开
 
@@ -447,15 +444,3 @@ MAX_CLIENT = 100
 MAX_CONNECTION = 1000
 CONNECTION_TIMEOUT = 600
 ```
-
-5、常量
-
-常量使用以下划线分隔的大写命名
-MAX_OVERFLOW = 100
-
-```python
-Class FooBar:
-	def foo_bar(self, print_):
-    print(print_)
-```
- 
