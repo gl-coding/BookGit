@@ -414,3 +414,630 @@ important
 
 [![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
 
+
+
+##五分钟搞懂Vuex
+
+
+
+这段时间一直在用vue写项目，vuex在项目中也会依葫芦画瓢使用，但是总有一种朦朦胧胧的感觉。于是决定彻底搞懂它。
+
+看了一下午的官方文档，以及资料，才发现vuex so easy！
+
+作为一个圈子中的人，决定输出一下文档，如果你仔细看完这篇文章，保证你对vuex熟练掌握。
+
+ 
+
+我把自己的代码上传到了github，大家有需要的可以拉下来：[github](https://github.com/chinabin1993/Vuex/tree/master/app)
+
+ 
+
+**先说一下vuex到底是什么？**
+
+```
+vuex 是一个专门为vue.js应用程序开发的状态管理模式。
+```
+
+这个状态我们可以理解为在data中的属性，需要共享给其他组件使用的部分。
+
+也就是说，是我们需要共享的data，使用vuex进行统一集中式的管理。
+
+ 
+
+**vuex中，有默认的五种基本的对象：**
+
+- state：存储状态（变量）
+- getters：对数据获取之前的再次编译，可以理解为state的计算属性。我们在组件中使用 $sotre.getters.fun()
+- mutations：修改状态，并且是同步的。在组件中使用$store.commit('',params)。这个和我们组件中的自定义事件类似。
+- actions：异步操作。在组件中使用是$store.dispath('')
+- modules：store的子模块，为了开发大型项目，方便状态管理而使用的。这里我们就不解释了，用起来和上面的一样。
+
+ 
+
+ 
+
+下面我们正式开始，一步步使用vuex
+
+ 
+
+ 
+
+**1、首先创建一个vue-cli项目**
+
+执行下面的命令，创建一个app项目（这里也可以使用其他非webpack模板，以及非app名称）
+
+```
+vue init webpack app
+```
+
+![img](https://img2018.cnblogs.com/blog/1132752/201810/1132752-20181025094020785-2098655329.png)
+
+**2、创建完成之后，我们进入文件夹下，并且运行项目**
+
+```
+cd app/
+npm run dev
+```
+
+接下来我们在src目录下创建一个vuex文件夹
+
+并在vuex文件夹下创建一个store.js文件
+
+文件夹目录长得是这个样子
+
+![img](https://img2018.cnblogs.com/blog/1132752/201810/1132752-20181025094451438-1196335206.png)
+
+ 
+
+**3、目前我们还没有引入vuex，我们需要先下载vuex，并且引入它**
+
+在保证我们处于我们项目下，在命令行输入下面命令，安装vuex
+
+```
+npm install vuex --save
+```
+
+![img](https://img2018.cnblogs.com/blog/1132752/201810/1132752-20181025094704516-1563241321.png)
+
+**4、安装成功之后，我们就可以在store.js中尽情玩耍我们的vuex了！**
+
+在store.js文件中，引入vuex并且使用vuex，这里注意我的变量名是大写Vue和Vuex　
+
+[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
+
+```
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
+
+const state = {
+    count: 0
+}
+
+export default new Vuex.Store({
+    state
+})
+```
+
+[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
+
+![img](https://img2018.cnblogs.com/blog/1132752/201810/1132752-20181025101214364-1432619691.png)
+
+接下来，在main.js中引入store
+
+[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
+
+```
+import Vue from 'vue'
+import App from './App'
+import router from './router'
+import store from './vuex/store' // 引入store
+Vue.config.productionTip = false
+
+/* eslint-disable no-new */
+new Vue({
+    el: '#app',
+    router,
+    store,
+    components: { App },
+    template: '<App/>'
+})
+```
+
+[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
+
+然我我们在任意一个组件中就可以使用我们定义的count属性了。
+
+这里我们在helloWorld中使用一下，去除helloworld.vue中不用的标签
+
+```
+<template>
+  <div class="hello">
+    <h3>{{$store.state.count}}</h3>
+  </div>
+</template>
+```
+
+打开我们刚才运行项目的浏览器，可以看到已经使用成功了！
+
+![img](https://img2018.cnblogs.com/blog/1132752/201810/1132752-20181025102828144-1410048770.png)
+
+并且在vue开发工具中我们可以看到我们定义的变量count
+
+![img](https://img2018.cnblogs.com/blog/1132752/201810/1132752-20181025102941351-684492737.png)
+
+到这一步，已经成功了一小半！vuex很简单吧？
+
+回想一下，我们只需要在下载安装使用vuex，在我们定义的store.js中定义state对象，并且暴露出去。
+
+在main.js中使用我们的store.js（这里是为了防止在各个组件中引用，因为main.js中，有我们的new Vue 实例啊！）
+
+ 
+
+现在我们已经使用了vuex中的state，接下来我们如何操作这个值呢？ 没错！用mutations和actions
+
+我们继续操作store.js文件
+
+我们在sotre.js中定义mutations对象，该对象中有两个方法，mutations里面的参数，第一个默认为state，接下来的为自定义参数。
+
+我们在mutations中定义两个方法，增加和减少，并且设置一个参数n，默认值为0，然后在Vuex.Store中使用它
+
+按 Ctrl+C 复制代码
+
+按 Ctrl+C 复制代码
+
+然后我们在helloWorld.vue中，使用这个方法
+
+还记得我们如何在组件中使用mutations吗？就和自定义事件非常相似
+
+[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
+
+```
+<template>
+  <div class="hello">
+    <h3>{{$store.state.count}}</h3>
+    <div>
+      <button @click="handleAddClick(10)">增加</button>
+      <button @click="handleReduceClick(10)">减少</button>
+    </div>
+  </div>
+</template>
+```
+
+[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
+
+按 Ctrl+C 复制代码
+
+按 Ctrl+C 复制代码
+
+来浏览器看一下效果如何！
+
+我们可以看到每当触发事件时，我们都可以在vue开发工具中看到我们触发的mutations方法，以及参数
+
+完美！
+
+![img](https://img2018.cnblogs.com/blog/1132752/201810/1132752-20181025104416816-1799684408.png)
+
+ 
+
+接下来就是actions，actions是异步操作
+
+创建actions对象，并且使用
+
+这里我在两个方法中使用了两个不同的参数，一个是context，它是一个和store对象具有相同对象属性的参数。在第二个函数中，我是直接使用了这个对象的commit的方法。
+
+凭大家喜好就行
+
+按 Ctrl+C 复制代码
+
+按 Ctrl+C 复制代码
+
+在helloWorld.vue中
+
+在methods中，增加两个方法，使用dispath来触发
+
+```
+ <div>异步操作</div>
+  <div>
+    <button @click="handleActionsAdd(10)">异步增加</button>
+    <button @click="handleActionsReduce(10)">异步减少</button>
+  </div>
+```
+
+按 Ctrl+C 复制代码
+
+按 Ctrl+C 复制代码
+
+进入浏览器看下效果如何！
+
+最后就是getters
+
+我们一般使用getters来获取我们的state，因为它算是state的一个计算属性
+
+按 Ctrl+C 复制代码
+
+按 Ctrl+C 复制代码
+
+```
+<h4>{{count}}</h4>
+const getters = {
+    getterCount(state) {
+        return (state.count += 10)
+    }
+}
+```
+
+getters算是非常简单的了。
+
+到这里，如果全都看懂了，vuex你已经没有压力了。
+
+但是vuex官方给了我们一个更简单的方式来使用vuex， 也就是 {mapState, mapMutations, mapActions, mapGetters}
+
+只要我们把上面基础的搞懂，这些都不在话下，只是方面我们书写罢了。
+
+就这么简单，这里我们用到了es6的扩展运算符。如果不熟悉的同学还是去看看阮一峰大神的《Es6标准入门》这本书，我是看完了，受益匪浅！
+
+[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
+
+```
+<script>
+import {mapState, mapMutations, mapActions, mapGetters} from 'vuex'
+export default {
+  name: 'HelloWorld',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods: {
+    ...mapMutations({
+      handleAddClick: 'mutationsAddCount',
+      handleReduceClick: 'mutationsReduceCount'
+    }),
+    ...mapActions({
+      handleActionsAdd: 'actionsAddCount',
+      handleActionsReduce: 'actionsReduceCount'
+    })
+    // handleAddClick(n){
+    //   this.$store.commit('mutationsAddCount',n);
+    // },
+    // handleReduceClick(n){
+    //   this.$store.commit('mutationsReduceCount',n);
+    // },
+    // handleActionsAdd(n){
+    //   this.$store.dispatch('actionsAddCount',n)
+    // },
+    // handleActionsReduce(n){
+    //   this.$store.dispatch('actionsReduceCount',n)
+    // }
+  },
+  computed: {
+    count(){
+      return this.$store.getters.getterCount
+    }
+  }
+}
+</script>
+```
+
+[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
+
+ 
+
+同理，getters和 state也可以使用 mapState，mapGetters
+
+ 
+
+如果你更懒的话，我们可以使用数组，而非对象，或者es6里面的对象简写方式
+
+就像这种
+
+![img](https://img2018.cnblogs.com/blog/1132752/201810/1132752-20181025111730523-167264298.png)
+
+ 
+
+最后，如果大家发现有什么问题，或者错误的地方，欢迎留言交流。
+
+ 
+
+ 
+
+ 
+
+分割线----------------------------------------------------------------------
+看到后台一些小伙伴问我用的什么编辑器，我这里用的是vscode，然后把我自己的一些配置给贴上，喜欢的话可以粘贴复制一下。
+
+最近的效果是这样子的~~
+
+字体用的是Fira Code 很好用的一种字体
+
+![img](https://img2018.cnblogs.com/blog/1132752/201911/1132752-20191121131324707-839993847.png)
+
+ 
+
+ 
+
+ 
+
+[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
+
+```
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.cursorStyle": "block",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 24,
+  "editor.lineNumbers": "on",
+  "editor.minimap.enabled": false,
+  "editor.renderIndentGuides": false,
+  "editor.rulers": [120],
+  "workbench.colorTheme": "Andromeda",
+  "workbench.iconTheme": "vscode-great-icons",
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "files.associations": {
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript"
+  },
+  "emmet.includeLanguages": {
+    "wxml": "html"
+  },
+  "minapp-vscode.disableAutoConfig": true,
+  "window.zoomLevel": -1,
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "todo-tree.defaultHighlight": {
+    "type": "text",
+},
+"todo-tree.customHighlight": {
+    "TODO": {
+        "icon": "check",
+        "foreground": "#000",
+        "background": "#cecb32",
+        "iconColour": "#fffc43"
+    },
+    "FIXME": {
+        "icon": "alert",
+        "foreground": "#fff",
+        "background": "#ca4848",
+        "iconColour": "#ff4343"
+    }
+},
+"todo-tree.highlights.customHighlight": {
+  "TODO": {
+    "icon": "check",
+    "foreground": "#000",
+    "background": "#cecb32",
+    "iconColour": "#fffc43"
+  },
+  "FIXME": {
+    "icon": "alert",
+    "foreground": "#fff",
+    "background": "#ca4848",
+    "iconColour": "#ff4343"
+  }
+},
+"todo-tree.highlights.defaultHighlight": {
+  "type": "text"
+}
+}
+```
+
+[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
+
+ 
+
+如果你的才华还实现不了你的野心，那就静下心来，埋头苦干。有志者事竟成破釜成舟百二秦关终属楚，苦心人天不负卧薪尝胆三千越甲可吞吴！
+
+
+
+# Mock.js新手教程
+
+# 1.什么是Mock.js?
+
+生成随机数据，拦截 Ajax 请求。
+
+通过随机数据，模拟各种场景；不需要修改既有代码，就可以拦截 Ajax 请求，返回模拟的响应数据；支持生成随机的文本、数字、布尔值、日期、邮箱、链接、图片、颜色等；支持支持扩展更多数据类型，支持自定义函数和正则。
+
+优点是非常简单方便, 无侵入性, 基本覆盖常用的接口数据类型.
+
+# 2.安装
+
+使用npm安装:npm install mockjs;
+
+或直接<script src="http://mockjs.com/dist/mock.js"></script>;
+
+# 3.使用方式
+
+###   1-基本语法
+
+>  Mock.mock('地址',{        "dataname|rule":{"对应的值"}    }) 
+>
+> **说明：**地址就是我们通过ajax获取数据时候填写的地址，这里填写的地址可以是任意不存在的地址，第二个参数是我们要模拟的数据，以及相应的规则。
+
+###   2-语法规则  
+
+  参照官网实例即可：
+
+> **示例：**
+>
+> Mock.mock('https://www.test.com',{
+>
+> ​    "userInfo|4":[{  //生成|num个如下格式名字的数据
+>
+> ​      "id|+1":1,  //数字从当前数开始后续依次加一
+>
+> ​      "name":"@cname",  //名字为随机中文名字
+>
+> ​      "ago|18-28":25,   //年龄为18-28之间的随机数字
+>
+> ​      "sex|1":["男","女"],  //性别是数组中的一个，随机的
+>
+> ​      "job|1":["web","UI","python","php"]  //工作是数组中的一个
+>
+> ​    }]
+>
+>   })
+
+最后通过ajax接收数据，形式如下：
+
+>   //ajax接收数据，通过jq
+>
+>   $.get('https://www.test.com',function(data){
+>
+> ​    console.log(JSON.parse(data));
+>
+>   })
+
+最终生成的数据为：
+
+![img](https:////upload-images.jianshu.io/upload_images/15197486-c8e4253df31e3e19.png?imageMogr2/auto-orient/strip|imageView2/2/w/505/format/webp)
+
+> **注意：**
+>
+> 对于通过Random属性而来的一些随机数据-比如随机生成图片，使用方式如下：
+>
+> ​        Mock.mock('http://www.test.com',{
+>
+> ​      "ListInfo|5":[{
+>
+> ​        **"img":Mock.Random.image('200x100')**
+>
+> ​      }]
+>
+> ​    });
+>
+> //这里的图片数据就是随机生成的，只是大小被指定为200X100了
+
+mock.js模拟数据
+
+
+
+**一、mock解决的问题**
+
+开发时，后端还没完成数据输出，前端只好写静态模拟数据。数据太长了，将数据写在js文件里，完成后挨个改url。某些逻辑复杂的代码，加入或去除模拟数据时得小心翼翼。想要尽可能还原真实的数据，要么编写更多代码，要么手动修改模拟数据。特殊的格式，例如IP,随机数，图片，地址，需要去收集
+
+
+
+**二、mock优点**
+
+1、前后端分离
+
+让前端工程师独立于后端进行开发。
+
+ 
+
+2、增加测试的真实性
+
+通过随机数据，模拟各种场景。
+
+ 
+
+3、开发无侵入
+
+不需要修改既有代码，就可以拦截Ajax请求，返回模拟的响应数据。
+
+ 
+
+4、用法简单
+
+符合直觉的接口。
+
+ 
+
+5、数据类型丰富
+
+支持生成随机的文本、数字、布尔值、日期、邮箱、链接、图片、颜色等。
+
+ 
+
+6、方便扩展
+
+支持支持扩展更多数据类型，支持自定义函数和正则。
+
+ 
+
+7、在已有接口文档的情况下，我们可以直接按照接口文档来开发，将相应的字段写好，在接口完成 之后，只需要改变url地址即可。
+
+ 
+
+8、不涉及跨域问题
+
+
+
+ 
+
+**三、案例demo**
+
+1.首先需要下载安装mockjs模块
+
+```
+cnpm install mockjs -S
+```
+
+2.然后可以在scr下创建一个文件夹，用于存放模拟的数据的文件 例如 /src/mock/index.js,在这个文件中
+
+```
+const Mock = require("mockjs");
+let data = Mock.mock({
+    "data|100": [ //生成100条数据 数组
+        {
+            "shopId|+1": 1,//生成商品id，自增1
+            "shopMsg": "@ctitle(10)", //生成商品信息，长度为10个汉字
+            "shopName": "@cname",//生成商品名 ， 都是中国人的名字
+            "shopTel": /^1(5|3|7|8)[0-9]{9}$/,//生成随机电话号
+            "shopAddress": "@county(true)", //随机生成地址
+            "shopStar|1-5": "", //随机生成1-5个星星
+            "salesVolume|30-1000": 30, //随机生成商品价格 在30-1000之间
+            "shopLogo": "@Image(‘100x40‘,‘#c33‘, ‘#ffffff‘,‘小北鼻‘)", //生成随机图片，大小/背景色/字体颜色/文字信息
+            "food|7": [ //每个商品中再随机生成七个food
+                {
+                    "foodName": "@cname", //food的名字
+                    "foodPic": "@Image(‘100x40‘,‘#c33‘, ‘#ffffff‘,‘小可爱‘)",//生成随机图片，大小/背景色/字体颜色/文字信息
+                    "foodPrice|1-100": 20,//生成1-100的随机数
+                    "aname|14": [
+                        { 
+                            "aname": "@cname", 
+                            "aprice|30-60": 20 
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+})
+Mock.mock(/goods\/goodAll/, ‘post‘, () => { //三个参数。第一个路径，第二个请求方式post/get，第三个回调，返回值
+    return data
+})
+```
+
+ 3.模拟完数据后，需要在入口主文件 main.js中 引入这个模拟数据的文件
+
+```
+import "./mock/index.js"
+```
+
+ 4.在页面中，我们直接可以进行axios请求，（这里懒省事了，正常情况下，要把每个接口都封装到api里面，后期便于修改维护等一系列操作）
+
+```
+import axios from "axios";
+mounted () {
+   this.initMsg();
+},
+methods: {
+   initMsg(){
+　　　　　　axios.post("http://localhost:8080/goods/goodAll").then((res)=>{
+　　　　　　　　console.log(res)
+　　　　  　})
+　　}  
+}
+```
